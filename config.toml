@@ -1,0 +1,9 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Blog - Gitea"
+disableRSS = true
+
+[params]
+  Description = "Git with a cup of tea"
+  Author = "The Gitea Authors"
+  Website = "https://blog.gitea.io"
