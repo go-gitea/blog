@@ -1,11 +1,8 @@
++++
+date = "2016-11-21T11:00:00+02:00"
+title = "Welcome to Gitea"
 
----
-date: "2016-11-21T11:00:00+02:00"
-draft: true
-title: "Welcome to Gitea"
-weight: 10
-type: "index"
----
++++
 
 Gitea is a community fork of the popular self-hosted Git service Gogs.
 
@@ -16,11 +13,11 @@ model.
 
 This happened not before trying to convince @Unknwon about giving
 write permissions to more people, among the community. He rightly
-considered Gogs his pet project and didn't want to let it grow
+considered Gogs his own creature and didn't want to let it grow
 outside of him, thus a fork was necessary in order to set that
 code effectively free.
 
-As Kahlil Gibran used to say:
+As Kahlil Gibran wrote about children:
 
     Your children are not your children.
     They are the sons and daughters of Life's longing for itself.
