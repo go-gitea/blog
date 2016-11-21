@@ -1,6 +1,7 @@
 +++
 date = "2016-11-21T11:00:00+02:00"
 title = "Welcome to Gitea"
+draft = true
 
 +++
 
