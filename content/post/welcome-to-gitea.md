@@ -4,7 +4,6 @@ author: "strk"
 title: "Welcome to Gitea"
 tags: ["announcement"]
 draft: false
-type: "post"
 ---
 
 Gitea is a community fork of the popular self-hosted Git service Gogs. We're a growing group of former Gogs users and contributors who found the single-maintainer management model of Gogs frustrating and thus decided to make an effort to build a more open and faster development model.

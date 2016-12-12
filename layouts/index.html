@@ -48,6 +48,12 @@
 				</div>
 			{{ end }}
 		</div>
+
+		{{ if .Site.DisqusShortname }}
+			<div class="col-xs-12">
+				{{ template "_internal/disqus.html" . }}
+			</div>
+		{{ end }}
 	</div>
 </div>
 
