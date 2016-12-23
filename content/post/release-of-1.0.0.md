@@ -23,7 +23,7 @@ We proudly present the release of Gitea version 1.0.0. We have closed [43](https
   * Added commit SHA to tag webhook [#286](https://github.com/go-gitea/gitea/issues/286)
   * Secured links via noopener [#315](https://github.com/go-gitea/gitea/issues/315)
   * Replace tabs with spaces on wiki title [#371](https://github.com/go-gitea/gitea/pull/371)
-  * Fixed vulnerability on labels [#409](https://github.com/go-gitea/gitea/pull/409)
+  * Fixed vulnerability on labels and releases [#409](https://github.com/go-gitea/gitea/pull/409)
   * Fixed issue comment API [#449](https://github.com/go-gitea/gitea/pull/449)
 * ENHANCEMENT
   * Use proper import path for libravatar [#3](https://github.com/go-gitea/gitea/pull/3)
@@ -41,7 +41,7 @@ We proudly present the release of Gitea version 1.0.0. We have closed [43](https
   * Inject more ENV variables into custom hooks [#316](https://github.com/go-gitea/gitea/issues/316)
   * Correct LDAP login validation [#342](https://github.com/go-gitea/gitea/pull/342)
   * Integrate conf as bindata optionally [#354](https://github.com/go-gitea/gitea/pull/354)
-  * Serve vide files in browser [#418](https://github.com/go-gitea/gitea/pull/418)
+  * Serve video files in browser [#418](https://github.com/go-gitea/gitea/pull/418)
   * Configurable SSH host binding [#431](https://github.com/go-gitea/gitea/issues/431)
 * MISC
   * Forked from Gogs and renamed to Gitea
