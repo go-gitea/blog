@@ -3,7 +3,7 @@ date: "2016-12-23T08:00:00+02:00"
 author: "tboerger"
 title: "Release of 1.0.0"
 tags: ["release"]
-draft: false
+draft: true
 ---
 
 We proudly present the release of Gitea version 1.0.0. You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/v1.0.0/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/), if you want to upgrade from Gogs follow our [migration guide](https://docs.gitea.io/en-us/upgrade-from-gogs/).
