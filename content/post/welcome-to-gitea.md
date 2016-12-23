@@ -8,6 +8,8 @@ draft: false
 
 Gitea is a community fork of the popular self-hosted Git service Gogs. We're a growing group of former Gogs users and contributors who found the single-maintainer management model of Gogs frustrating and thus decided to make an effort to build a more open and faster development model.
 
+<!--more-->
+
 This happened not before trying to convince @Unknwon about giving write permissions to more people, among the community. He rightly considered Gogs his own creature and didn't want to let it grow outside of him, thus a fork was necessary in order to set that code effectively free.
 
 As Kahlil Gibran wrote about children:
