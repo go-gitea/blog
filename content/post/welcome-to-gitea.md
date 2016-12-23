@@ -16,6 +16,6 @@ As Kahlil Gibran wrote about children:
 
 Gitea has 3 owners which are elected yearly and an open number of maintainers who decide with a simple voting model which contributions get accepted and who will play the owner role. Anyone with at least 4 contributions accepted can apply to become a maintainer.
 
-Since the for at the beginning of November 2016 Gitea got 193 pull requests merged and 43 issues closed. Among management issues and cleanups, 11 bugs were closed. Anoher 26 PR are pending merges, many of which are just waiting for 1.0.0 to be released as most new features will start appearing in 1.1.0.
+Since the for at the beginning of November 2016 Gitea got 193 pull requests merged and 43 issues closed. Among management issues and cleanups, 11 bugs were closed. Another 26 PR are pending merges, many of which are just waiting for 1.0.0 to be released as most new features will start appearing in 1.1.0.
 
 We invite everyone to join the effort and help continue building the next generation of self-hosted Git service.
