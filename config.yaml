@@ -50,3 +50,7 @@ menu:
       url: https://discord.gg/NsatcWJ
       weight: 70
       pre: comment
+    - name: Forum
+      url: https://discourse.gitea.io/
+      weight: 80
+      pre: group
