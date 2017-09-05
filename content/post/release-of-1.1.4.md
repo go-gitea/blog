@@ -17,4 +17,5 @@ We proudly present the bugfix release of Gitea version 1.1.4. We have merged [6]
   * Fix deleted milestone bug (#1942) (#2300)
   * fix 500 error when view an issue which's milestone deleted (#2297) (#2299)
   * Fix SHA1 hash linking (#2143) (#2293)
-  * back port from #1709 (#2291)
+  * Fix rendering of issue checkboxes (#2291)
+  * Fix some security bugs
