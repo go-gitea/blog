@@ -8,7 +8,7 @@ draft: false
 
 We proudly present that we have released the third big version of Gitea v1.2.0. We have merged [676](https://github.com/go-gitea/gitea/milestone/3?closed=1) pull requests to release this version. You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.2.0/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
-This version is delayed about six months and it's not obey our release cycle plan. We changed the Logo for a new design by voting. Many new features added like Status, 20+ OAuth2 and OpenID login, Team Units, GPG validation, Batch operation of issues and etc. Also we fixed about 200+ bugs on this release cycle and it spent our many time. For next release [v1.3.0](https://github.com/go-gitea/gitea/milestone/9), I wish we can reduce the PRs and release ASAP!
+This version was delayed for six months but that will not change our release cycle plan. After voting by community we have changed the Logo desing. Many new features added like Status API and showing it in commit tab, integration with 20+ OAuth2 providers and support for OpenID login, Team Units, GPG signed commit validation, Batch operations on issues. Also there are more than 200 bugs fixed in this release cycle and that is also the reason why release was delayed so much. We are working hard to get next version [v1.3.0](https://github.com/go-gitea/gitea/milestone/9) released as soon as possible!
 
 <!--more-->
 
