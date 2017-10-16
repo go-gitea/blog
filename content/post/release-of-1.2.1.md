@@ -1,12 +1,12 @@
 ---
-date: "2017-10-16T17:22:30+02:00"
+date: "2017-10-16T17:22:30+01:00"
 author: "daviian"
 title: "Release of 1.2.1"
 tags: ["release"]
 draft: false
 ---
 
-We proudly present the bugfix release of Gitea version 1.2.1. We have merged [5](https://github.com/go-gitea/gitea/milestone/15?closed=1) pull requests to release this version of Gitea. You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.2.1/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
+We proudly present the bugfix release of Gitea version 1.2.1. We have merged [5](https://github.com/go-gitea/gitea/milestone/15?closed=1) pull requests to release this version. You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.2.1/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
 <!--more-->
 
