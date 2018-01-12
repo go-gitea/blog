@@ -41,6 +41,14 @@ Starting from version 1.4.0, Gitea's web interface is finally responsive; this m
 
 _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
+## Merge options in Pull Requests ([#3188](https://github.com/go-gitea/gitea/pull/3188))
+
+![Screenshot of merge options](/demos/3188/1.png)
+
+Hey, look! Someone submitted a pull request to your repo. Awesome. Except... it needs some work. And some more work. And some more. Just a tiny little bit... Done. Add also a few thousand merge-from-master commits along the way. And so you know that after the merge, your git history will never be the same again... that is, until today! Thanks to Squash and Merge, you can squash all the commits into a single one, and leave your git history stainless! We also added support for Rebase and Merge, similar to GitHub's merge options.
+
+_Thanks to **[@lafriks](https://github.com/lafriks)**_
+
 ## Mention completion in issue editor ([#3136](https://github.com/go-gitea/gitea/pull/3136))
 
 ![Mention completion demo](/demos/3136/1.gif)
@@ -49,9 +57,13 @@ _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
 _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
-## Progress bar for issue with checkboxes ([#1146](https://github.com/go-gitea/gitea/pull/3171))
+## Progress bar for issues with checkboxes ([#3171](https://github.com/go-gitea/gitea/pull/3171))
 
-TODO
+![Progress bar demo](/demos/3171/1.png)
+
+Did you know that Gitea has, like GitHub, support for checkboxes in markdown? If you write a bulletpoint in the following format: `- [ ]` you will get a nice HTML textbox. And does this have to do with checkboxes? Everything, of course! The issue list will now show the percentage of checked items in the top issue post. So you always know how far you've gotten on the roadmap.
+
+_Thanks to **[@modmew8](https://github.com/modmew8)**_
 
 ## Long commits now have an expandable body ([#2980](https://github.com/go-gitea/gitea/pull/2980))
 
@@ -69,6 +81,12 @@ Woah. You just came back from your holidays, and you should probably catch up on
 
 _Thanks to **[@svarmalov](https://github.com/svarmalov)**_
 
+## Write access for deploy keys ([#3225](https://github.com/go-gitea/gitea/pull/3225))
+
+![Screenshot showing a Read/Write deploy key and a Read deploy key](/demos/3225/1.png)
+
+In some cases, you may need to grant your server write access to the repository. Who knows, perhaps because of a tool that automatically generates and commits code? Either way, starting today, deploy keys can now be set to also have the ability to "write" to a repository. Power to the servers!
+
 ## Customize Gitea
 
 TODO: set of PRs that enable better customizability
@@ -85,13 +103,14 @@ folder.
 # Other changes
 
 - **BREAKING:** if you used `GOGS_WORK_DIR` to change the working directory of Gitea, that won't work anymore - you'll need to use `GITEA_WORK_DIR`. ([#2946](https://github.com/go-gitea/gitea/pull/2946))
-- The default app.ini now resides in `custom/conf/app.ini.sample` - this should make it slightly less confusing for new users to find where the default configuration is. ([#1522](https://github.com/go-gitea/gitea/pull/1522))
 - Is your Gitea server running on HTTPS? Now you can tweak your settings to create an HTTP server which will redirect all its requests to the HTTPS server! ([#1928](https://github.com/go-gitea/gitea/pull/1928))
+- We now serve .patch and .diff files for pull requests, just like GitHub does. ([#3239](https://github.com/go-gitea/gitea/pull/3293), [#3305](https://github.com/go-gitea/gitea/pull/3305))
+- The default app.ini now resides in `custom/conf/app.ini.sample` - this should make it slightly less confusing for new users to find where the default configuration is. ([#1522](https://github.com/go-gitea/gitea/pull/1522))
 - If you're a [Dingtalk](https://www.dingtalk.com/en) user, you'll be happy to know webhooks now support it starting from 1.4.0. Hooray! ([#2777](https://github.com/go-gitea/gitea/pull/2777))
   - As a reminder, we currently support webhooks for Slack, Discord and Gitea's own format, as well as a version for Gogs, to keep backwards compatibility. Also, Gitea and Gogs are mostly compatible with GitHub's webhooks!
-- Parlez-vous français? The Gitea docs now feature [French](https://docs.gitea.io/fr-fr/). Keep in mind that the only language that is guaranteed to be kept up-to-date on the documentation is English; all other languages may have information that is inaccurate, so please stick to english if you want to make sure everything works in the latest gitea version. ([#3030](https://github.com/go-gitea/gitea/pull/3030))
+- Git LFS aficionados: we added support for the [File Locking API](https://github.com/git-lfs/git-lfs/blob/master/docs/api/locking.md). ([#2938](https://github.com/go-gitea/gitea/pull/2938))
+- Parlez-vous français? The Gitea docs now features [French](https://docs.gitea.io/fr-fr/). Keep in mind that the only language that is guaranteed to be kept up-to-date on the documentation is English; all other languages may have information that is inaccurate, so please stick to english if you want to make sure everything works in the latest gitea version. ([#3030](https://github.com/go-gitea/gitea/pull/3030))
 - Shoutout to [@silverwind](https://github.com/silverwind) for making various minor improvements to the UI, you can see all of them [here](https://github.com/go-gitea/gitea/pulls?q=is%3Apr+author%3Asilverwind+milestone%3A1.4.0).
-- We now serve .patch and .diff files for pull requests, just like GitHub does. ([#3239](https://github.com/go-gitea/gitea/pull/3293), [#3305](https://github.com/go-gitea/gitea/pull/3305))
 - If you run the `gitea` executable with no commands, it will now run the default webserver. Which means, unless you want to specify any flag, you can run gitea just by typing `./gitea`. ([#3331](https://github.com/go-gitea/gitea/pull/3331))
 
 # Help us out!
@@ -120,11 +139,42 @@ TODO
 
 # Thanks
 
-TODO: List of usernames of merged PRs
+This release would not have been possible without the pull requests from the following people:
 
-# Full changelog
+<!-- I hacked together a quick python script: in case I disappear, you can just change the release ID on this: https://gist.github.com/thehowl/e10b1526517a8436ec83fe8e15cf9edf -->
+* [@appleboy](https://github.com/appleboy)
+* [@bkcsoft](https://github.com/bkcsoft)
+* [@Bwko](https://github.com/Bwko)
+* [@cybe](https://github.com/cybe)
+* [@DblK](https://github.com/DblK)
+* [@dnmgns](https://github.com/dnmgns)
+* [@ethantkoenig](https://github.com/ethantkoenig)
+* [@gdeverlant](https://github.com/gdeverlant)
+* [@j-keck](https://github.com/j-keck)
+* [@JonasFranzDEV](https://github.com/JonasFranzDEV)
+* [@kolaente](https://github.com/kolaente)
+* [@lunny](https://github.com/lunny)
+* [@malweka](https://github.com/malweka)
+* [@metalmatze](https://github.com/metalmatze)
+* [@microbug](https://github.com/microbug)
+* [@Morlinest](https://github.com/Morlinest)
+* [@muhfaris](https://github.com/muhfaris)
+* [@necaris](https://github.com/necaris)
+* [@r0l1](https://github.com/r0l1)
+* [@raphink](https://github.com/raphink)
+* [@sapk](https://github.com/sapk)
+* [@SnowMB](https://github.com/SnowMB)
+* [@sokolovstas](https://github.com/sokolovstas)
+* [@stefan-lacatus](https://github.com/stefan-lacatus)
+* [@strk](https://github.com/strk)
+* [@svarlamov](https://github.com/svarlamov)
+* [@tbraeutigam](https://github.com/tbraeutigam)
+* [@thehowl](https://github.com/thehowl)
+* [@twang2218](https://github.com/twang2218)
+* [@typeless](https://github.com/typeless)
+* [@wyattoday](https://github.com/wyattoday)
 
-TODO: Changelog like the previous versions.
+[PRs](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+milestone%3A1.4.0) and [issues](https://github.com/go-gitea/gitea/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A1.4.0) merged in 1.4.0.
 
 # Get in touch
 
