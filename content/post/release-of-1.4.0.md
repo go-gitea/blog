@@ -114,23 +114,25 @@ Gitea is a Gogs fork that focuses especially on community input and contribution
 
 ## Programming
 
-If you know Go, or HTML/CSS/JS, then you may be interested in working TODO
+If you know Go, or HTML/CSS/JS, then you may be interested in working directly on the code. It may seem scary. It may seem like you know nothing about this and you're probably best off not doing anything - but the best way is to try. Give a good read to the [contribution guide,](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md) and then [find an itch to scratch,](https://github.com/go-gitea/gitea/issues) unless you have your own.
 
 ## Translating
 
-TODO
+Feeling like helping to translate Gitea in your own language? Awesome! You can join the Gitea project on [Crowdin.](https://crowdin.com/project/gitea) As soon as your translation is approved, it will be pushed to the Gitea project, in order to be used for future releases!
 
 ## Documentation
 
-TODO
+Documentation is important, but unfortunately often overlooked and time-consuming. Nevertheless, if you enjoy writing and have a pretty good knowledge of English, or you would like to translate the English version to your native language, then you're very welcome to do so. You can find our documentation on the main git repository [here.](https://github.com/go-gitea/gitea/tree/master/docs) Just fork, change the documentation, then create a pull request!
 
 ## Support
 
-TODO
+Do you like humans? Can you give calm and thought-out responses to users needing help? Then you can spend some time providing support to those who need it. Most answers can really be found in the documentation, so make sure to take some time to read it through. Then, either join our chat or forums (linked below), or simply answer question issues on the [Gitea repository.](https://github.com/go-gitea/gitea/issues)
 
 ## ... or just reporting bugs
 
-TODO
+Finally, if you lack the time or knowledge to do any of the above, it's completely fine. Just using Gitea and sharing the word is enough to make us happy :) Although, one thing you could always do is that to report the bugs you find on the [Gitea repository](https://github.com/go-gitea/gitea/issues) - if you don't, we may never be able to find them!
+
+Before opening a new issue, remember to read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports) - it's pretty important that you also try at least to find some time to eventually answer the issues you report - otherwise, we'd be just talking to a wall and the problem would never get fixed :(.
 
 # Thanks
 
