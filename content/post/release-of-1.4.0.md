@@ -87,6 +87,8 @@ _Thanks to **[@svarmalov](https://github.com/svarmalov)**_
 
 In some cases, you may need to grant your server write access to the repository. Who knows, perhaps because of a tool that automatically generates and commits code? Either way, starting today, deploy keys can now be set to also have the ability to "write" to a repository. Power to the servers!
 
+_Thanks to **[@vtemian](https://github.com/vtemian)**_
+
 ## Customize Gitea
 
 TODO: set of PRs that enable better customizability
@@ -142,37 +144,42 @@ TODO
 This release would not have been possible without the pull requests from the following people:
 
 <!-- I hacked together a quick python script: in case I disappear, you can just change the release ID on this: https://gist.github.com/thehowl/e10b1526517a8436ec83fe8e15cf9edf -->
+* [@0rzech](https://github.com/0rzech)
+* [@AlbertoGP](https://github.com/AlbertoGP)
 * [@appleboy](https://github.com/appleboy)
+* [@bibaijin](https://github.com/bibaijin)
 * [@bkcsoft](https://github.com/bkcsoft)
-* [@Bwko](https://github.com/Bwko)
-* [@cybe](https://github.com/cybe)
-* [@DblK](https://github.com/DblK)
-* [@dnmgns](https://github.com/dnmgns)
+* [@cez81](https://github.com/cez81)
 * [@ethantkoenig](https://github.com/ethantkoenig)
-* [@gdeverlant](https://github.com/gdeverlant)
-* [@j-keck](https://github.com/j-keck)
-* [@JonasFranzDEV](https://github.com/JonasFranzDEV)
-* [@kolaente](https://github.com/kolaente)
+* [@Exagone313](https://github.com/Exagone313)
+* [@harryxu](https://github.com/harryxu)
+* [@haytona](https://github.com/haytona)
+* [@jsstrn](https://github.com/jsstrn)
+* [@lafriks](https://github.com/lafriks)
 * [@lunny](https://github.com/lunny)
-* [@malweka](https://github.com/malweka)
-* [@metalmatze](https://github.com/metalmatze)
-* [@microbug](https://github.com/microbug)
-* [@Morlinest](https://github.com/Morlinest)
-* [@muhfaris](https://github.com/muhfaris)
-* [@necaris](https://github.com/necaris)
-* [@r0l1](https://github.com/r0l1)
-* [@raphink](https://github.com/raphink)
+* [@M2shad0w](https://github.com/M2shad0w)
+* [@makarchuk](https://github.com/makarchuk)
+* [@MCF](https://github.com/MCF)
+* [@michaelkuhn](https://github.com/michaelkuhn)
+* [@modmew8](https://github.com/modmew8)
+* [@mrexodia](https://github.com/mrexodia)
+* [@MTecknology](https://github.com/MTecknology)
+* [@pluehne](https://github.com/pluehne)
+* [@romanegunkov](https://github.com/romanegunkov)
 * [@sapk](https://github.com/sapk)
-* [@SnowMB](https://github.com/SnowMB)
-* [@sokolovstas](https://github.com/sokolovstas)
-* [@stefan-lacatus](https://github.com/stefan-lacatus)
+* [@schaffman5](https://github.com/schaffman5)
+* [@silverwind](https://github.com/silverwind)
+* [@sondr3](https://github.com/sondr3)
+* [@stesachse](https://github.com/stesachse)
 * [@strk](https://github.com/strk)
 * [@svarlamov](https://github.com/svarlamov)
-* [@tbraeutigam](https://github.com/tbraeutigam)
+* [@tboerger](https://github.com/tboerger)
+* [@techknowlogick](https://github.com/techknowlogick)
 * [@thehowl](https://github.com/thehowl)
-* [@twang2218](https://github.com/twang2218)
-* [@typeless](https://github.com/typeless)
-* [@wyattoday](https://github.com/wyattoday)
+* [@uncled1023](https://github.com/uncled1023)
+* [@vtemian](https://github.com/vtemian)
+* [@wmantly](https://github.com/wmantly)
+* [@znegva](https://github.com/znegva)
 
 [PRs](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+milestone%3A1.4.0) and [issues](https://github.com/go-gitea/gitea/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A1.4.0) merged in 1.4.0.
 
