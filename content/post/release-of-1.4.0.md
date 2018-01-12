@@ -49,6 +49,10 @@ _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
 _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
+## Progress bar for issue with checkboxes ([#1146](https://github.com/go-gitea/gitea/pull/3171))
+
+TODO
+
 ## Long commits now have an expandable body ([#2980](https://github.com/go-gitea/gitea/pull/2980))
 
 ![Commit body expansion demo](/demos/2980/1.gif)
