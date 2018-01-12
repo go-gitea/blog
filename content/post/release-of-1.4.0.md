@@ -6,13 +6,6 @@ tags: ["release"]
 draft: true
 ---
 
-<style>
-/* TEMPORARY: need to update theme. see https://github.com/go-gitea/theme/issues/48 */
-img {
-	max-width: 100%;
-}
-</style>
-
 Hello! Yet another release cycle is over; this time around we merged [X pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged) - we made sure to deliver as much as we could in this new Gitea version, and we're sure you're going to like it.
 
 Starting from this release, we'll also make sure to walk you through the most important changes we made - instead of just dumping the PRs closed in this release and their category. And boy have we got a lot of stuff to talk about.
