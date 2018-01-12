@@ -68,7 +68,7 @@ _Thanks to **[@sondr3](https://github.com/sondr3)**_
 
 ## Mark all notifications as read ([#3097](https://github.com/go-gitea/gitea/pull/3097))
 
-TODO: screenshot. Would do that but I need to mock two notifications, and I can't be bothered just yet.
+![Mark notifications as read demo](/demos/3097/1.png)
 
 Woah. You just came back from your holidays, and you should probably catch up on everything that happened at work... but should you? You can always sneakily dismiss all notifications. This tiny little button will also make that much easier for you ;).
 
