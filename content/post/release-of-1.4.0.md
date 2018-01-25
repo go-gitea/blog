@@ -18,7 +18,7 @@ Starting from this release, we'll also make sure to walk you through the most im
 
 ![Screenshot of Reactions](/demos/2856/2.png)
 
-Yes. Yes! YES!!! Gitea now has reactions on pull requests and issues. Now hopefully your collaborators will shut up with their "+1" comments on the issue and will instead just press the 👍 button. Oh yeah 😎.
+Yes. Yes! YES!!! Gitea now has reactions on pull requests and issues. Maybe now your inbox won't be crammed with "+1" emails from your collaborators. Oh yeah 😎.
 
 _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
@@ -54,7 +54,7 @@ _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
 ![Progress bar demo](/demos/3171/1.png)
 
-Did you know that Gitea has, like GitHub, support for checkboxes in markdown? If you write a bulletpoint in the following format: `- [ ]` you will get a nice HTML textbox. And does this have to do with checkboxes? Everything, of course! The issue list will now show the percentage of checked items in the top issue post. So you always know how far you've gotten on the roadmap.
+Did you know that Gitea has, like GitHub, support for checkboxes in markdown? If you write a bulletpoint in the following format: `- [ ]` you will get a nice HTML textbox. And what does this have to do with checkboxes? Everything, of course! The issue list will now show the percentage of checked items in the top issue post. So you always know how far you've gotten on the roadmap.
 
 _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
@@ -62,7 +62,7 @@ _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
 ![Commit body expansion demo](/demos/2980/1.gif)
 
-Making a long commit? Now you can view the entire contents of it without changing the page; you will only need to press on the ellipsis button, similar to what you can see on GitHub and GitLab.
+Did someone write an entire essay in the commit message? Now you can view the entire contents of it without changing the page; you will only need to press on the ellipsis button, similar to what you can see on GitHub and GitLab.
 
 _Thanks to **[@sondr3](https://github.com/sondr3)**_
 
@@ -104,7 +104,7 @@ folder.
 - If you're a [Dingtalk](https://www.dingtalk.com/en) user, you'll be happy to know webhooks now support it starting from 1.4.0. Hooray! ([#2777](https://github.com/go-gitea/gitea/pull/2777))
   - As a reminder, we currently support webhooks for Slack, Discord and Gitea's own format, as well as a version for Gogs, to keep backwards compatibility. Also, Gitea and Gogs are mostly compatible with GitHub's webhooks!
 - Git LFS aficionados: we added support for the [File Locking API](https://github.com/git-lfs/git-lfs/blob/master/docs/api/locking.md). ([#2938](https://github.com/go-gitea/gitea/pull/2938))
-- Parlez-vous français? The Gitea docs now features [French](https://docs.gitea.io/fr-fr/). Keep in mind that the only language that is guaranteed to be kept up-to-date on the documentation is English; all other languages may have information that is inaccurate, so please stick to english if you want to make sure everything works in the latest gitea version. ([#3030](https://github.com/go-gitea/gitea/pull/3030))
+- Parlez-vous français? The Gitea docs are now also available in [French](https://docs.gitea.io/fr-fr/). Keep in mind that the only language that is guaranteed to be kept up-to-date on the documentation is English; all other languages may have information that is inaccurate, so please stick to english if you want to make sure everything works in the latest gitea version. ([#3030](https://github.com/go-gitea/gitea/pull/3030))
 - Shoutout to [@silverwind](https://github.com/silverwind) for making various minor improvements to the UI, you can see all of them [here](https://github.com/go-gitea/gitea/pulls?q=is%3Apr+author%3Asilverwind+milestone%3A1.4.0).
 - If you run the `gitea` executable with no commands, it will now run the default webserver. Which means, unless you want to specify any flag, you can run gitea just by typing `./gitea`. ([#3331](https://github.com/go-gitea/gitea/pull/3331))
 
