@@ -1,5 +1,5 @@
 ---
-date: "2018-01-25T12:00:00+00:00"
+date: "2018-02-05T12:00:00+00:00"
 author: "thehowl"
 title: "Gitea 1.4 is released"
 tags: ["release"]
