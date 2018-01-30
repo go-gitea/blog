@@ -82,18 +82,11 @@ In some cases, you may need to grant your server write access to the repository.
 
 _Thanks to **[@vtemian](https://github.com/vtemian)**_
 
-## Customize Gitea
+## Customize Gitea ([#3051](https://github.com/go-gitea/gitea/pull/3051), [#3286](https://github.com/go-gitea/gitea/pull/3286))
 
-TODO: set of PRs that enable better customizability
+Did you know that you can modify templates without fearing merge conflicts by re-creating them inside the `custom` folder of your Gitea instance? This has always allowed you to change parts of Gitea to suit your own needs and make it your own. From this release, we also added a few templates which will allow you to place custom JS/CSS. You can find all of this on the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
 
-* https://github.com/go-gitea/gitea/pull/3051
-* https://github.com/go-gitea/gitea/pull/3286
-* https://github.com/go-gitea/gitea/issues/2115
-* https://github.com/go-gitea/gitea/pull/3345
-* https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages
-
-TODO: quick guide on how to customize gitea, and tell users about the custom
-folder.
+_Thanks to **[@bkcsoft](https://github.com/bkcsoft)** and **[@lafriks](https://github.com/lafriks)**_
 
 # Other changes
 
