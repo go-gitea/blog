@@ -30,7 +30,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Responsive UI screenshot](/demos/2750/3.png)
 
-Starting from version 1.4.0, Gitea's web interface is finally responsive; this means it can be properly used from your phone without having to pinch everywhere to see what is on the screen! There may be some places where the interface is still not completely responsive, in which case we ask you kindly to [file an issue](https://github.com/go-gitea/gitea/issues) if there isn't one already, posting screenshots of what does not work.
+Starting from version 1.4.0, we've reworked some of the interface to allow for a more responsive design; this means it can be properly used from your phone without having to pinch everywhere to see what is on the screen! There may be some places where the interface is still not completely responsive, in which case we ask you kindly to [file an issue](https://github.com/go-gitea/gitea/issues) if there isn't one already, posting screenshots of what does not work.
 
 _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
