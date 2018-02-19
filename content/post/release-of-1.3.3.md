@@ -7,7 +7,7 @@ draft: false
 ---
 
 We proudly present the bugfix release of Gitea version 1.3.3. This release contains important
-security fixes so it is highly recomended to update to latest release.
+security fixes so it is highly recommended to update to latest release.
 We have merged [5 pull requests](https://github.com/go-gitea/gitea/milestone/20?closed=1) to release this version.
 You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.3.3/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
