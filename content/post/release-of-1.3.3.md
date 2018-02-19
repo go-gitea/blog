@@ -1,5 +1,5 @@
 ---
-date: "2018-02-15T13:30:00+02:00"
+date: "2018-02-19T13:30:00+02:00"
 author: "lafriks"
 title: "Release of 1.3.3"
 tags: ["release"]
@@ -9,7 +9,7 @@ draft: false
 We proudly present the bugfix release of Gitea version 1.3.3. This release contains important
 security fixes so it is highly recomended to update to latest release.
 We have merged [5 pull requests](https://github.com/go-gitea/gitea/milestone/20?closed=1) to release this version.
-You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.3.1/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
+You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.3.3/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
 <!--more-->
 
