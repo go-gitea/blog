@@ -107,7 +107,7 @@ Gitea is focused on community input and contributions. To keep a project like Gi
 
 ## Programming
 
-If you know Go or HTML/CSS/JavaScript, you may be interested in working on the code. It may seem scary, but the best way is to try! Read the [Gitea contribution guide](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md), and then [find an itch to scratch](https://github.com/go-gitea/gitea/issues), or scratch your own itch!
+If you know Go or HTML/CSS/JavaScript, you may be interested in working on the code. It may seem scary, but the best way is to try! Read the [Gitea contribution guide](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md), and then [find an itch to scratch](https://github.com/go-gitea/gitea/issues), or scratch your own!
 
 ## Translating
 
@@ -125,7 +125,7 @@ Do you like people? Can you give calm and thought-out responses to users needing
 
 If you lack the time or knowledge to do any of the above, just using Gitea and sharing the word is enough to make us happy! One thing you can always do is to report any bugs you find on the [Gitea issue tracker](https://github.com/go-gitea/gitea/issues).
 
-Before opening an issue, read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports). It's pretty important to try and find some time to also answer questions on the issues you report.
+Before opening an issue, read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports). After opening an issue, try to stick around a while to answer any questions we might have. Replies greatly help us find the root cause of an issue.
 
 # Thanks
 
