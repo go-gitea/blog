@@ -6,9 +6,9 @@ tags: ["release"]
 draft: true
 ---
 
-Hello! Yet another release cycle is over; this time around we merged [X pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged) - we made sure to deliver as much as we could in this new Gitea version, and we're sure you're going to like it.
+The Gitea 1.4 release is done, with a total of [X merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
 
-Starting from this release, we'll also make sure to walk you through the most important changes we made - instead of just dumping the PRs closed in this release and their category. And boy have we got a lot of stuff to talk about.
+Starting this release, we'll walk you through the most important changes. We've got a lot to talk about for Gitea 1.4.
 
 <!--more-->
 
@@ -18,7 +18,7 @@ Starting from this release, we'll also make sure to walk you through the most im
 
 ![Screenshot of Reactions](/demos/2856/2.png)
 
-Yes. Yes! YES!!! Gitea now has reactions on pull requests and issues. Maybe now your inbox won't be crammed with "+1" emails from your collaborators. Oh yeah 😎.
+Gitea now features reactions for pull requests and issues. Quickly share your thoughts or lighten up the mood of technical discussions.
 
 _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
@@ -30,7 +30,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Responsive UI screenshot](/demos/2750/3.png)
 
-Starting from version 1.4.0, we've reworked some of the interface to allow for a more responsive design; this means it can be properly used from your phone without having to pinch everywhere to see what is on the screen! There may be some places where the interface is still not completely responsive, in which case we ask you kindly to [file an issue](https://github.com/go-gitea/gitea/issues) if there isn't one already, posting screenshots of what does not work.
+In Gitea 1.4 we've updated the web interface to a responsive layout. This makes Gitea easier to read and use on phones and tablets. Please [file an issue](https://github.com/go-gitea/gitea/issues) with screenshots if you encounter parts that do not adapt correctly to smaller displays.
 
 _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
@@ -38,7 +38,7 @@ _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
 ![Screenshot of merge options](/demos/3188/1.png)
 
-Hey, look! Someone submitted a pull request to your repo. Awesome. Except... it needs some work. And some more work. And some more. Just a tiny little bit... Done. Add also a few thousand merge-from-master commits along the way. And so you know that after the merge, your git history will never be the same again... that is, until today! Thanks to Squash and Merge, you can squash all the commits into a single one, and leave your git history stainless! We also added support for Rebase and Merge, similar to GitHub's merge options.
+Use the new time-saving 'Merge Pull Request' to quickly merge branches. Gitea now also features 'Squash and Merge' and 'Rebase and Merge' to keep your Git commit history tidy.
 
 _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
@@ -46,7 +46,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Mention completion demo](/demos/3136/1.gif)
 
-"Is this the right username?" is no more. With our shiny new mention completion, you can now start typing an username or a name of someone on your Gitea instance, and results will start popping up as you type.
+Gitea now understands the @-syntax in comments and will pop up a username auto-completion dialog. This makes selecting the right username a breeze.
 
 _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
@@ -54,7 +54,7 @@ _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
 ![Progress bar demo](/demos/3171/1.png)
 
-Did you know that Gitea has, like GitHub, support for checkboxes in markdown? If you write a bulletpoint in the following format: `- [ ]` you will get a nice HTML textbox. And what does this have to do with checkboxes? Everything, of course! The issue list will now show the percentage of checked items in the top issue post. So you always know how far you've gotten on the roadmap.
+Issue lists in Gitea 1.4 show progress bars for issues that include checkboxes. Add checkboxes to your issue by typing `- [ ]` (unchecked state) or `- [X]` (checked state). Quickly keep track of your progress this way.
 
 _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
@@ -62,7 +62,7 @@ _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
 ![Commit body expansion demo](/demos/2980/1.gif)
 
-Did someone write an entire essay in the commit message? Now you can view the entire contents of it without changing the page; you will only need to press on the ellipsis button, similar to what you can see on GitHub and GitLab.
+You can now quickly expand long commit messages inline using the ellipsis next to it.
 
 _Thanks to **[@sondr3](https://github.com/sondr3)**_
 
@@ -70,7 +70,7 @@ _Thanks to **[@sondr3](https://github.com/sondr3)**_
 
 ![Mark notifications as read demo](/demos/3097/1.png)
 
-Woah. You just came back from your holidays, and you should probably catch up on everything that happened at work... but should you? You can always sneakily dismiss all notifications. This tiny little button will also make that much easier for you ;).
+Gitea 1.4 adds a button to the notifications list to easily dismiss all unread notifications.
 
 _Thanks to **[@svarmalov](https://github.com/svarmalov)**_
 
@@ -78,13 +78,13 @@ _Thanks to **[@svarmalov](https://github.com/svarmalov)**_
 
 ![Screenshot showing a Read/Write deploy key and a Read deploy key](/demos/3225/1.png)
 
-In some cases, you may need to grant your server write access to the repository. Who knows, perhaps because of a tool that automatically generates and commits code? Either way, starting today, deploy keys can now be set to also have the ability to "write" to a repository. Power to the servers!
+Deploy keys can now also be allowed to write to repositories. This is useful in cases where a tool automatically generates and commits code.
 
 _Thanks to **[@vtemian](https://github.com/vtemian)**_
 
 ## Customize Gitea ([#3051](https://github.com/go-gitea/gitea/pull/3051), [#3286](https://github.com/go-gitea/gitea/pull/3286))
 
-Did you know that you can modify templates without fearing merge conflicts by re-creating them inside the `custom` folder of your Gitea instance? This has always allowed you to change parts of Gitea to suit your own needs and make it your own. From this release, we also added a few templates which will allow you to place custom JS/CSS. You can find all of this on the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
+Gitea's `custom` folder already allowed you to customize parts of Gitea to your needs. In Gitea 1.4, we added templates allowing you to also customize JavaScript and CSS. Read all about this in the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
 
 _Thanks to **[@bkcsoft](https://github.com/bkcsoft)** and **[@lafriks](https://github.com/lafriks)**_
 
@@ -103,29 +103,29 @@ _Thanks to **[@bkcsoft](https://github.com/bkcsoft)** and **[@lafriks](https://g
 
 # Help us out!
 
-Gitea is a Gogs fork that focuses especially on community input and contributions - and to keep a project like this going we need people. **_LOTS_** of people. Not for feeding, of course, but to help us in the following areas:
+Gitea is focused on community input and contributions. To keep a project like Gitea going we need people. **_LOTS_** of people. Feel free to help in the following areas:
 
 ## Programming
 
-If you know Go, or HTML/CSS/JS, then you may be interested in working directly on the code. It may seem scary. It may seem like you know nothing about this and you're probably best off not doing anything - but the best way is to try. Give a good read to the [contribution guide,](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md) and then [find an itch to scratch,](https://github.com/go-gitea/gitea/issues) unless you have your own.
+If you know Go or HTML/CSS/JavaScript, you may be interested in working on the code. It may seem scary, but the best way is to try! Read the [Gitea contribution guide](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md), and then [find an itch to scratch](https://github.com/go-gitea/gitea/issues), or scratch your own itch!
 
 ## Translating
 
-Feeling like helping to translate Gitea in your own language? Awesome! You can join the Gitea project on [Crowdin.](https://crowdin.com/project/gitea) As soon as your translation is approved, it will be pushed to the Gitea project, in order to be used for future releases!
+Want to translate Gitea in your own language? Awesome! Join the Gitea project on [Crowdin](https://crowdin.com/project/gitea). As soon as your translation is approved, it will be pushed to the Gitea project to be used in future releases!
 
 ## Documentation
 
-Documentation is important, but unfortunately often overlooked and time-consuming. Nevertheless, if you enjoy writing and have a pretty good knowledge of English, or you would like to translate the English version to your native language, then you're very welcome to do so. You can find our documentation on the main git repository [here.](https://github.com/go-gitea/gitea/tree/master/docs) Just fork, change the documentation, then create a pull request!
+Documentation is important, but also time consuming. If you enjoy writing and have a pretty good knowledge of English, or you would like to translate the English version to your native language, you're very welcome to do so. Find our documentation on the main git repository [here](https://github.com/go-gitea/gitea/tree/master/docs). Just fork, update the documentation and then create a pull request!
 
 ## Support
 
-Do you like humans? Can you give calm and thought-out responses to users needing help? Then you can spend some time providing support to those who need it. Most answers can really be found in the documentation, so make sure to take some time to read it through. Then, either join our chat or forums (linked below), or simply answer question issues on the [Gitea repository.](https://github.com/go-gitea/gitea/issues)
+Do you like people? Can you give calm and thought-out responses to users needing help? Then you can spend some time providing support to those who need it. Most answers can really be found in the documentation, so make sure to take some time to read it. Then, either join our chat or forums (linked below), or simply answer question issues on the [Gitea repository](https://github.com/go-gitea/gitea/issues).
 
-## ... or just reporting bugs
+## … or reporting bugs
 
-Finally, if you lack the time or knowledge to do any of the above, it's completely fine. Just using Gitea and sharing the word is enough to make us happy :) Although, one thing you could always do is that to report the bugs you find on the [Gitea repository](https://github.com/go-gitea/gitea/issues) - if you don't, we may never be able to find them!
+If you lack the time or knowledge to do any of the above, just using Gitea and sharing the word is enough to make us happy! One thing you can always do is to report any bugs you find on the [Gitea issue tracker](https://github.com/go-gitea/gitea/issues).
 
-Before opening a new issue, remember to read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports) - it's pretty important that you also try at least to find some time to eventually answer the issues you report - otherwise, we'd be just talking to a wall and the problem would never get fixed :(.
+Before opening an issue, read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports). It's pretty important to try and find some time to also answer questions on the issues you report.
 
 # Thanks
 
