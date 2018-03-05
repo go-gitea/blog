@@ -30,7 +30,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Responsive UI screenshot](/demos/2750/3.png)
 
-In Gitea 1.4 we've updated the web interface to a responsive layout. This makes Gitea easier to read and use on phones and tablets. Please [file an issue](https://github.com/go-gitea/gitea/issues) with screenshots if you encounter parts that do not adapt correctly to smaller displays.
+In Gitea 1.4 we've updated the web interface to a responsive layout. This makes Gitea easier to read and use on phones and tablets. Please [file an issue](https://github.com/go-gitea/gitea/issues) with screenshots if you encounter parts that do not adapt correctly to smaller displays - while we did our best to test it thoroughly, we may have missed some spots!
 
 _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
@@ -38,7 +38,7 @@ _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
 ![Screenshot of merge options](/demos/3188/1.png)
 
-Use the new time-saving 'Merge Pull Request' to quickly merge branches. Gitea now also features 'Squash and Merge' and 'Rebase and Merge' to keep your Git commit history tidy.
+We've added support for 'Rebase and Merge' and 'Squash and Merge', which should allow you to keep your git history tidier. Rebase and Merge will not create a merge commit, whereas Squash and Merge will squash all the commits of the PR into one, so that in the repository's history it looks like a single commit was added.
 
 _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
@@ -46,7 +46,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Mention completion demo](/demos/3136/1.gif)
 
-Gitea now understands the @-syntax in comments and will pop up a username auto-completion dialog. This makes selecting the right username a breeze.
+Gitea now understands the @-syntax when typing a comment and will pop up a username auto-completion dialog. This makes selecting the right username a breeze.
 
 _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
@@ -54,7 +54,7 @@ _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
 ![Progress bar demo](/demos/3171/1.png)
 
-Issue lists in Gitea 1.4 show progress bars for issues that include checkboxes. Add checkboxes to your issue by typing `- [ ]` (unchecked state) or `- [X]` (checked state). Quickly keep track of your progress this way.
+Issue lists in Gitea 1.4 show progress bars for issues that include checkboxes. Add checkboxes to your issue by typing `- [ ]` (unchecked state) or `- [X]` (checked state). This way, you can easily keep track of the progress you've made towards closing the issue.
 
 _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
@@ -91,7 +91,7 @@ _Thanks to **[@bkcsoft](https://github.com/bkcsoft)** and **[@lafriks](https://g
 # Other changes
 
 - **BREAKING:** if you used `GOGS_WORK_DIR` to change the working directory of Gitea, that won't work anymore - you'll need to use `GITEA_WORK_DIR`. ([#2946](https://github.com/go-gitea/gitea/pull/2946))
-- Is your Gitea server running on HTTPS? Now you can tweak your settings to create an HTTP server which will redirect all its requests to the HTTPS server! ([#1928](https://github.com/go-gitea/gitea/pull/1928))
+- Is your Gitea server running on HTTPS? Now you can tweak your settings to create an HTTP server which will redirect all its requests to the HTTPS server. ([#1928](https://github.com/go-gitea/gitea/pull/1928))
 - We now serve .patch and .diff files for pull requests, just like GitHub does. ([#3239](https://github.com/go-gitea/gitea/pull/3293), [#3305](https://github.com/go-gitea/gitea/pull/3305))
 - The default app.ini now resides in `custom/conf/app.ini.sample` - this should make it slightly less confusing for new users to find where the default configuration is. ([#1522](https://github.com/go-gitea/gitea/pull/1522))
 - If you're a [Dingtalk](https://www.dingtalk.com/en) user, you'll be happy to know webhooks now support it starting from 1.4.0. Hooray! ([#2777](https://github.com/go-gitea/gitea/pull/2777))
