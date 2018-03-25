@@ -1,12 +1,14 @@
 ---
-date: "2018-02-05T12:00:00+00:00"
+date: "2018-03-25T12:00:00+00:00"
 author: "thehowl"
 title: "Gitea 1.4 is released"
 tags: ["release"]
 draft: true
 ---
 
-The Gitea 1.4 release is done, with a total of [X merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
+The Gitea 1.4 release is done, with a total of [236 merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
+
+You can download one of pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.4.0/). For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
 Starting this release, we'll walk you through the most important changes. We've got a lot to talk about for Gitea 1.4.
 
