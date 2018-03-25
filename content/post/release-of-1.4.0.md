@@ -1,16 +1,16 @@
 ---
 date: "2018-03-25T12:00:00+00:00"
 author: "thehowl"
-title: "Gitea 1.4 is released"
+title: "Gitea 1.4.0 is released"
 tags: ["release"]
 draft: false
 ---
 
-The Gitea 1.4 release is done, with a total of [236 merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
+The Gitea 1.4.0 release is done, with a total of [236 merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
 
 You can download one of pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.4.0/). For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
-Starting this release, we'll walk you through the most important changes. We've got a lot to talk about for Gitea 1.4.
+Starting this release, we'll walk you through the most important changes. We've got a lot to talk about for Gitea 1.4.0.
 
 <!--more-->
 
@@ -88,7 +88,7 @@ _Thanks to **[@vtemian](https://github.com/vtemian)**_
 
 Gitea's `custom` folder already allowed you to customize parts of Gitea to your needs. In Gitea 1.4, we added templates allowing you to also customize JavaScript and CSS. Read all about this in the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
 
-_Thanks to **[@bkcsoft](https://github.com/bkcsoft)** and **[@lafriks](https://github.com/lafriks)**_
+_Thanks to **[@techknowlogick](https://github.com/techknowlogick)** and **[@tboerger](https://github.com/tboerger)**_
 
 # Other changes
 
