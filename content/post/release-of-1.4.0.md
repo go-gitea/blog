@@ -1,5 +1,5 @@
 ---
-date: "2018-03-25T12:00:00+00:00"
+date: "2018-03-25T10:00:00+00:00"
 author: "thehowl"
 title: "Gitea 1.4.0 is released"
 tags: ["release"]
@@ -32,7 +32,7 @@ _Thanks to **[@lafriks](https://github.com/lafriks)**_
 
 ![Responsive UI screenshot](/demos/2750/3.png)
 
-In Gitea 1.4 we've updated the web interface to a responsive layout. This makes Gitea easier to read and use on phones and tablets. Please [file an issue](https://github.com/go-gitea/gitea/issues) with screenshots if you encounter parts that do not adapt correctly to smaller displays - while we did our best to test it thoroughly, we may have missed some spots!
+In Gitea 1.4.0 we've updated the web interface to a responsive layout. This makes Gitea easier to read and use on phones and tablets. Please [file an issue](https://github.com/go-gitea/gitea/issues) with screenshots if you encounter parts that do not adapt correctly to smaller displays - while we did our best to test it thoroughly, we may have missed some spots!
 
 _Thanks to **[@thehowl](https://github.com/thehowl)**_
 
@@ -56,7 +56,7 @@ _Thanks to **[@harryxu](https://github.com/harryxu)**_
 
 ![Progress bar demo](/demos/3171/1.png)
 
-Issue lists in Gitea 1.4 show progress bars for issues that include checkboxes. Add checkboxes to your issue by typing `- [ ]` (unchecked state) or `- [X]` (checked state). This way, you can easily keep track of the progress you've made towards closing the issue.
+Issue lists in Gitea 1.4.0 show progress bars for issues that include checkboxes. Add checkboxes to your issue by typing `- [ ]` (unchecked state) or `- [X]` (checked state). This way, you can easily keep track of the progress you've made towards closing the issue.
 
 _Thanks to **[@modmew8](https://github.com/modmew8)**_
 
@@ -86,7 +86,7 @@ _Thanks to **[@vtemian](https://github.com/vtemian)**_
 
 ## Customize Gitea ([#3051](https://github.com/go-gitea/gitea/pull/3051), [#3286](https://github.com/go-gitea/gitea/pull/3286))
 
-Gitea's `custom` folder already allowed you to customize parts of Gitea to your needs. In Gitea 1.4, we added templates allowing you to also customize JavaScript and CSS. Read all about this in the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
+Gitea's `custom` folder already allowed you to customize parts of Gitea to your needs. In Gitea 1.4.0, we added templates allowing you to also customize JavaScript and CSS. Read all about this in the [documentation](https://docs.gitea.io/en-us/customizing-gitea/#customizing-gitea-pages).
 
 _Thanks to **[@techknowlogick](https://github.com/techknowlogick)** and **[@tboerger](https://github.com/tboerger)**_
 
