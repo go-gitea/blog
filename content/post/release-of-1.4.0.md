@@ -3,7 +3,7 @@ date: "2018-03-25T12:00:00+00:00"
 author: "thehowl"
 title: "Gitea 1.4 is released"
 tags: ["release"]
-draft: true
+draft: false
 ---
 
 The Gitea 1.4 release is done, with a total of [236 merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.4.0+is%3Amerged). We made sure to deliver as many new features as possible in this version—you're going to love it!
