@@ -14,7 +14,7 @@ You can download one of our pre-built binaries from our [downloads page](https:/
 We would like to say special thanks to those who reported security issues fixed in this release.
 * [@nubenum](https://github.com/nubenum) ([#3778](https://github.com/go-gitea/gitea/pull/3778))
 * Bernd Ziegenbalg ([#3721](https://github.com/go-gitea/gitea/pull/3721))
-* Kacper Szurek ([#3871](https://github.com/go-gitea/gitea/pull/3871))
+* [Kacper Szurek](https://security.szurek.pl/) ([#3871](https://github.com/go-gitea/gitea/pull/3871))
 * shannara (IRC) ([#3887](https://github.com/go-gitea/gitea/pull/3887))
 
 <!--more-->
