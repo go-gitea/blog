@@ -1,5 +1,5 @@
 ---
-date: "2018-05-02T13:30:00+02:00"
+date: "2018-05-03T09:30:00+02:00"
 author: "techknowlogick"
 title: "Release of 1.4.1"
 tags: ["release"]
@@ -10,6 +10,12 @@ We proudly present the bugfix release of Gitea version 1.4.1. This release conta
 security fixes so it is highly recommended to update to latest release.
 We have merged [17 pull requests](https://github.com/go-gitea/gitea/milestone/22?closed=1) to release this version.
 You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.4.1/), you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
+
+We would like to say special thanks to those who reported security issues fixed in this release.
+* [@nubenum](https://github.com/nubenum) ([#3778](https://github.com/go-gitea/gitea/pull/3778))
+* Bernd Ziegenbalg ([#3721](https://github.com/go-gitea/gitea/pull/3721))
+* Kacper Szurek ([#3871](https://github.com/go-gitea/gitea/pull/3871))
+* shannara (IRC) ([#3887](https://github.com/go-gitea/gitea/pull/3887))
 
 <!--more-->
 
