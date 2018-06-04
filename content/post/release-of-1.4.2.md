@@ -6,7 +6,7 @@ tags: ["release"]
 draft: false
 ---
 
-It's been a wild and wonderful weekend. Many new users have found Gitea and we are so happy to be able to help you with your self-hosting Git journey.
+It's been a wild and wonderful weekend. Many new users have found Gitea and we are so happy to be able to help you with your self-hosting Git journey. Thank you to all of our backers on [Open Collective](https://opencollective.com/gitea), you are helping us deliver a better piece of software.
 
 We are happy to release version 1.4.2 of Gitea. We have merged [13 pull requests](https://github.com/go-gitea/gitea/milestone/23?closed=1) to release version.
 
