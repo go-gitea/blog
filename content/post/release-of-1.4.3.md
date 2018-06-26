@@ -15,7 +15,7 @@ For further details of the installation follow our [installation guide](https://
 We would like to say special thanks to those who reported security issues fixed in this release.
 
 * [@nickolas360](https://github.com/nickolas360) [#4192](https://github.com/go-gitea/gitea/pull/4192)
-* [@glitch003](https://github.com/glitch003) and INSERT OTHER RESEARCHER HERE [#4307](https://github.com/go-gitea/gitea/issues/4307)
+* [@glitch003](https://github.com/glitch003) and [@cezar97](https://github.com/cezar97) [#4307](https://github.com/go-gitea/gitea/issues/4307)
 
 <!--more-->
 
