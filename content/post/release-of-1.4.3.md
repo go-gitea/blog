@@ -17,6 +17,8 @@ We would like to say special thanks to those who reported security issues fixed 
 * [@nickolas360](https://github.com/nickolas360) [#4192](https://github.com/go-gitea/gitea/pull/4192)
 * [@glitch003](https://github.com/glitch003) and [@cezar97](https://github.com/cezar97) [#4307](https://github.com/go-gitea/gitea/issues/4307)
 
+If you have found a vulnerability in the project, please write privately to [security@gitea.io](mailto:security@gitea.io). Thanks!
+
 <!--more-->
 
 ## Changelog
