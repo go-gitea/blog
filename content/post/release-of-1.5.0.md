@@ -11,6 +11,18 @@ You can download one of our pre-built binaries from our [downloads page](https:/
 For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 Thank you to all of our backers on [Open Collective](https://opencollective.com/gitea), you are helping us deliver a better piece of software.
 
+To enhance security we are also signing all of our releases with the following [GPG Key]()
+
+This release includes:
+* FIDO U2F to enchance security protections of Gitea accounts
+* Topic support for repos 
+* Global code search
+* Issue features/enhancements: Search for issues via API, multiple assignees for issues, label descriptions and more
+* Performance enhancements such as: reducing sql query times, reducing repo indexer disk usage, and Enable caching on assets and avatars.
+* UI enhancements: emoji autocomplete, symlink icons, user settings refactor, release page refactor and more
+
+Please see full changelog below for more details.
+
 We would also like to say special thanks to those who reported security issues fixed in this release.
 
 * [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
