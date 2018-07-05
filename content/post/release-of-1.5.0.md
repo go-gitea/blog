@@ -11,7 +11,7 @@ You can download one of our pre-built binaries from our [downloads page](https:/
 For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 Thank you to all of our backers on [Open Collective](https://opencollective.com/gitea), you are helping us deliver a better piece of software.
 
-To enhance security we are also signing all of our releases with the following [GPG Key]()
+To enhance security we are also signing all of our releases with the following [GPG Key](http://pool.sks-keyservers.net/pks/lookup?op=get&hash=on&fingerprint=on&search=0x2D9AE806EC1592E2)
 
 This release includes:
 * FIDO U2F to enchance security protections of Gitea accounts
