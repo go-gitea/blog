@@ -1,6 +1,6 @@
 baseurl: https://blog.gitea.io/
 languageCode: en-us
-title: Gitea Blog
+title: Blog
 theme: gitea
 disqusShortname: gitea
 
