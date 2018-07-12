@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://gitea.disqus.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://fonts.gstatic.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://gitea.disqus.com https://c.disquscdn.com https://disqus.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://c.disquscdn.com; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' https://referrer.disqus.com https://c.disquscdn.com; frame-src 'self' https://disqus.com https://disqusads.com
   X-Frame-Options: DENY
   X-Xss-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
