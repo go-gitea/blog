@@ -1,81 +1,305 @@
 ---
 date: "2018-07-07T10:00:00+00:00"
-author: "techknowlogick"
+author: "thehowl"
 title: "Gitea 1.5.0 is released"
 tags: ["release"]
-draft: false
 ---
 
-We are happy to release version 1.5.0 of Gitea.  We have merged [250 merged pull requests](https://github.com/go-gitea/gitea/milestone/21?closed=1) to release this version.
-You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.5.0/), you just need to select the correct platform.
-For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
-Thank you to all of our backers on [Open Collective](https://opencollective.com/gitea), you are helping us deliver a better piece of software.
+The time has come for another minor release! We are happy to present Gitea
+1.5.0 to the world. This new release features
+[254 merged pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.5.0+is%3Amerged)
+-- just a bit more than last time (236).
 
-To enhance security we are also signing all of our releases with the following [GPG Key](http://pool.sks-keyservers.net/pks/lookup?op=get&hash=on&fingerprint=on&search=0x2D9AE806EC1592E2)
+You can download one of our pre-built binaries from our
+[downloads page](https://dl.gitea.io/gitea/1.5.0/), make sure to select the
+correct platform. For further details on how to install, follow our
+[installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
-This release includes:
-* FIDO U2F to enchance security protections of Gitea accounts
-* Topic support for repos 
-* Global code search
-* Issue features/enhancements: Search for issues via API, multiple assignees for issues, label descriptions and more
-* Performance enhancements such as: reducing sql query times, reducing repo indexer disk usage, and Enable caching on assets and avatars.
-* UI enhancements: emoji autocomplete, symlink icons, user settings refactor, release page refactor and more
+We'd like to thank all of our backers on
+[Open Collective](https://opencollective.com/gitea), who are helping us deliver
+a better piece of software.
 
-Please see full changelog below for more details.
-
-We would also like to say special thanks to those who reported security issues fixed in this release.
-
-* [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
-
-Deprecation notice: In the upcoming major release (1.6.0) we will remove support for Go 1.8 and also embedded tidb.
+With that out of the way, here's what's new in 1.5.0:
 
 <!--more-->
 
-## Changelog
+## Topics ([#3711](https://github.com/go-gitea/gitea/pull/3711))
 
-* SECURITY
-  * Limit uploaded avatar image-size to 4096px x 3072px by default (#4353)
-  * Do not allow to reuse TOTP passcode (#3878)
-* FEATURE
-  * Add cli commands to regen hooks & keys (#3979)
-  * Add support for FIDO U2F (#3971)
-  * Added user language setting (#3875)
-  * LDAP Public SSH Keys synchronization (#1844)
-  * Add topic support (#3711)
-  * Multiple assignees (#3705)
-  * Add protected branch whitelists for merging (#3689)
-  * Global code search support (#3664)
-  * Add label descriptions (#3662)
-  * Add issue search via API (#3612)
-  * Add repository setting to enable/disable health checks (#3607)
-  * Emoji Autocomplete (#3433)
-  * Implements generator cli for secrets (#3531)
-* ENHANCEMENT
-  * Add more webhooks support and refactor webhook templates directory (#3929)
-  * Add new option to allow only OAuth2/OpenID user registration (#3910)
-  * Add option to use paged LDAP search when synchronizing users (#3895)
-  * Symlink icons (#1416)
-  * Improve release page UI (#3693)
-  * Add admin dashboard option to run health checks (#3606)
-  * Add branch link in branch list (#3576)
-  * Reduce sql query times in retrieveFeeds (#3547)
-  * Option to enable or disable swagger endpoints (#3502)
-  * Add missing licenses (#3497)
-  * Reduce repo indexer disk usage (#3452)
-  * Enable caching on assets and avatars (#3376)
-  * Add repository search ordered by stars/forks. Forks column in admin repo list (#3969)
-  * Add Environment Variables to Docker template (#4012)
-  * LFS: make HTTP auth period configurable (#4035)
-  * Add config path as an optionial flag when changing pass via CLI (#4184)
-  * Refactor User Settings sections (#3900)
-  * Allow square brackets in external issue patterns (#3408)
-  * Add Attachment API (#3478)
-  * Add EnableTimetracking option to app settings (#3719)
-  * Add config option to enable or disable log executed SQL (#3726)
-  * Shows total tracked time in issue and milestone list (#3341)
-* TRANSLATION
-  * Improve English grammar and consistency (#3614)
-* DEPLOYMENT
-  * Allow Gitea to run as different USER in Docker (#3961)
-  * Provide compressed release binaries (#3991)
-  * Sign release binaries (#4188)
+![Topics demo](/demos/3711/1.gif)
+
+You can now neatly organise your repositories using topics, similar to those
+on GitHub.
+
+_Thanks to [**@lunny**](https://github.com/lunny)_
+
+## Emoji Completion ([#3433](https://github.com/go-gitea/gitea/pull/3433))
+
+![Demo of emoji completion](/demos/3433/1.gif)
+
+Our issues already had emojis, although you might not have known that,
+because our issue editor lacked one of the most important features to speak
+fluent emoji: Emoji autocompletion. You know, for when you mix up
+`stuck_out_tongue_closed_eyes` and `stuck_out_tongue_winking_eye` and don't
+understand which one is the most appropriate to use in that context. Every time,
+right?
+
+_Thanks to [**@modmew8**](https://github.com/modmew8)_
+
+## Global Code Search ([#3664](https://github.com/go-gitea/gitea/pull/3664))
+
+![Screenshot of Global Code Search](/demos/3664/1.png)
+
+We expanded our repo code search to allow for searching even MORE stuff - which
+is to say, your entire Gitea instance! If you go on Explore, you will now be
+able to search everywhere, if you have code search enabled.
+
+_Thanks to [**@lunny**](https://github.com/lunny)_
+
+## FIDO U2F Authentication ([#3971](https://github.com/go-gitea/gitea/pull/3971))
+
+TODO: gif, asked Jonas on discord to make one
+
+Boost your security by adding FIDO U2F for authentication. 🚀
+
+_Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV)_
+
+## Issue Due Date ([#3794](https://github.com/go-gitea/gitea/pull/3794))
+
+![Screenshot of issue due dates in the issue listing](/demos/3794/1.png)
+![Form to add a due date](/demos/3794/2.png)
+![Added issue date](/demos/3794/3.png)
+
+Deadlines: following them is both the Project Manager's dream and the
+Developer's nightmare. But, time and again it has been proven that they are,
+indeed, very useful, so now you can select due dates on issues to mark when they
+_should_ be finished. Emphasis on the _should_ there.
+
+_Thanks to [**@kolaente**](https://github.com/kolaente)_
+
+## Multiple Assignees ([#3705](https://github.com/go-gitea/gitea/pull/3705))
+
+![Screenshot of 2 people being assigned to an issue.](/demos/3705/1.png)
+
+In Gitea 1.5.0, you'll be able to assign multiple people to a single issue.
+For cases where you'll need more manpower in order to understand the cryptic
+code left by old developers of the legacy codebase.
+
+_Thanks to [**@kolaente**](https://github.com/kolaente)_
+
+## Label Descriptions ([#3662](https://github.com/go-gitea/gitea/pull/3662))
+
+![Label descriptions on the labels page](/demos/3662/1.png)
+
+![Tooltip when hovering over a label](/demos/3662/2.png)
+![Description is shown on the label picker as well](/demos/3662/3.png)
+
+_Enhancement_ is a funny word, isn't it? It's sort of like a feature but it's
+not as big as a feature. It might not be instantly clear to everyone who reads
+it, but you can help them understand through the use of the new descriptions!
+
+_Thanks to [**@lafriks**](https://github.com/lafriks)_
+
+## Total Tracked Time ([#3341](https://github.com/go-gitea/gitea/pull/3341))
+
+![Demo on a milestone](/demos/3341/1.png)
+
+You can now track the total amount of time you spent on a single issue - or even
+an entire milestone.
+
+_Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV)_
+
+## Other changes
+
+* If your team is used to placing issue references in square brackes
+  (ie. `[JIRA-123]`), we now correctly parse that!
+  ([#3408](https://github.com/go-gitea/gitea/pull/3408))
+* You can now specify a second whitelist for protected branches, allowing you
+  to select users who are able to merge PRs.
+  ([#3689](https://github.com/go-gitea/gitea/pull/3689))
+* From the admin panel, you can now run `git fsck` (health check) on all your
+  repositories, as well as disable it entirely if desired.
+  ([#3606](https://github.com/go-gitea/gitea/pull/3606),
+  [#3607](https://github.com/go-gitea/gitea/pull/3607))
+* We did some optimisations on the repository search feature - users report up
+  to a 3x reduction in disk usage by the indexer.
+  ([#3452](https://github.com/go-gitea/gitea/pull/3452))
+* Some changes were made to how Gitea handles messages with custom markup, such
+  as commit messages and issue comments. Mentions, emails, links and so on
+  should now be correctly handled.
+  ([#3354](https://github.com/go-gitea/gitea/pull/3354))
+* We added some new features to Gitea's API, such as issue search and
+  attachments. ([#3478](https://github.com/go-gitea/gitea/pull/3478),
+  [#3612](https://github.com/go-gitea/gitea/pull/3612))
+* Power to webhooks! We added support for delete, fork, issues, issue\_comment,
+  and release webhooks, which have long been a requested feature ever since
+  webhooks first came on Gogs.
+  ([#3929](https://github.com/go-gitea/gitea/pull/3929))
+* Symlinks in a repository are now marked by a distinctive icon.
+  ([#3826](https://github.com/go-gitea/gitea/pull/3826))
+* We'll remember your preferred language so that you don't have to change it for
+  each browser that you use.
+  ([#3875](https://github.com/go-gitea/gitea/pull/3875))
+* If you want to disable time tracking entirely, you can now do so from the app
+  settings. ([#3719](https://github.com/go-gitea/gitea/pull/3719))
+* Various changes to improve consistency and grammar in the English
+  localisation.
+  ([Various](https://github.com/go-gitea/gitea/pulls?q=is%3Apr+author%3Abugreport0+is%3Aclosed+milestone%3A1.5.0))
+* You can now sort repos in Explore and the admin panel by stars or forks.
+  ([#3969](https://github.com/go-gitea/gitea/pull/3969))
+* Starting from 1.5.0, we'll sign all our releases with our
+  [GPG Key,](http://pool.sks-keyservers.net/pks/lookup?op=get&hash=on&fingerprint=on&search=0x2D9AE806EC1592E2)
+  so you can be sure it's us.
+
+Please see full changelog below for more details.
+
+A shoutout goes to those who reported and/or fixed security issues in this
+release:
+
+* [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
+
+**Deprecation notice:** in the upcoming minor release (1.6.0) we will drop
+support for Go 1.8 and also embedded TiDB.
+
+# Help us out!
+
+Gitea is focused on community input and contributions. To keep a project like
+Gitea going we need people. **_LOTS_** of people. You can try to help in the
+following areas:
+
+## Programming
+
+If you know Go or HTML/CSS/JavaScript, you may be interested in working on the
+code. It may seem scary, but the best way is to try! Read the
+[Gitea contribution guide](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md),
+and then [find an itch to scratch](https://github.com/go-gitea/gitea/issues),
+or scratch your own!
+
+## Translating
+
+Want to translate Gitea in your own language? Awesome! Join the Gitea project
+on [Crowdin](https://crowdin.com/project/gitea). As soon as your translation is
+approved, it will be pushed to the Gitea project to be used in future releases!
+
+## Documentation
+
+Documentation is important, but also time consuming. If you enjoy writing and
+have a pretty good knowledge of English, or you would like to translate the
+English version to your native language, you're very welcome to do so. Find our
+documentation on the main git repository
+[here](https://github.com/go-gitea/gitea/tree/master/docs). Just fork, update
+the documentation and then create a pull request!
+
+## Support
+
+Do you like people? Can you give calm and thought-out responses to users needing
+help? Then you can spend some time providing support to those who need it. Most
+answers can really be found in the documentation, so make sure to take some time
+to read it. Then, either join our chat or forums (linked below), or simply
+answer question issues on the
+[Gitea repository](https://github.com/go-gitea/gitea/issues).
+
+## Donations
+
+If you, or your company, want to help us out sustain our financial expenses, you
+can do so by donating on [Open Collective](https://opencollective.com/gitea#).
+
+<a href="https://opencollective.com/gitea#backers" target="_blank"><img src="https://opencollective.com/gitea/backers.svg?width=890"></a>
+
+<a href="https://opencollective.com/gitea/sponsor/0/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/1/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/2/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/3/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/4/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/5/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/6/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/7/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/8/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/9/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/9/avatar.svg"></a>
+
+## … or reporting bugs
+
+If you lack the time or knowledge to do any of the above, just using Gitea and sharing the word is enough to make us happy! One thing you can always do is to report any bugs you find on the [Gitea issue tracker](https://github.com/go-gitea/gitea/issues).
+
+Before opening an issue, read the [contribution guidelines about reporting bugs](https://github.com/go-gitea/gitea/blob/master/CONTRIBUTING.md#bug-reports). After opening an issue, try to stick around a while to answer any questions we might have. Replies greatly help us find the root cause of an issue.
+
+# Thanks
+
+This release would not have been possible without the pull requests from the following people:
+
+* [@0rzech](https://github.com/0rzech)
+* [@AleksandrBulyshchenko](https://github.com/AleksandrBulyshchenko)
+* [@alxwrd](https://github.com/alxwrd)
+* [@andruwa13](https://github.com/andruwa13)
+* [@appleboy](https://github.com/appleboy)
+* [@aswild](https://github.com/aswild)
+* [@aunger](https://github.com/aunger)
+* [@axifive](https://github.com/axifive)
+* [@bkcsoft](https://github.com/bkcsoft)
+* [@BNolet](https://github.com/BNolet)
+* [@bugreport0](https://github.com/bugreport0)
+* [@Bwko](https://github.com/Bwko)
+* [@cez81](https://github.com/cez81)
+* [@charlesreid1](https://github.com/charlesreid1)
+* [@Chri-s](https://github.com/Chri-s)
+* [@christopherjmedlin](https://github.com/christopherjmedlin)
+* [@cleverer](https://github.com/cleverer)
+* [@coolaj86](https://github.com/coolaj86)
+* [@daviian](https://github.com/daviian)
+* [@derkoe](https://github.com/derkoe)
+* [@devil418](https://github.com/devil418)
+* [@dnmgns](https://github.com/dnmgns)
+* [@domrim](https://github.com/domrim)
+* [@dpeukert](https://github.com/dpeukert)
+* [@ethantkoenig](https://github.com/ethantkoenig)
+* [@FabioFortini](https://github.com/FabioFortini)
+* [@flufmonster](https://github.com/flufmonster)
+* [@francoism90](https://github.com/francoism90)
+* [@funkyfuture](https://github.com/funkyfuture)
+* [@harryxu](https://github.com/harryxu)
+* [@HoffmannP](https://github.com/HoffmannP)
+* [@inful](https://github.com/inful)
+* [@InonS](https://github.com/InonS)
+* [@jesselucas](https://github.com/jesselucas)
+* [@JonasFranzDEV](https://github.com/JonasFranzDEV)
+* [@kolaente](https://github.com/kolaente)
+* [@lafriks](https://github.com/lafriks)
+* [@liamcottam](https://github.com/liamcottam)
+* [@lunny](https://github.com/lunny)
+* [@marcinkuzminski](https://github.com/marcinkuzminski)
+* [@michaelkuhn](https://github.com/michaelkuhn)
+* [@microbug](https://github.com/microbug)
+* [@modmew8](https://github.com/modmew8)
+* [@monkeywithacupcake](https://github.com/monkeywithacupcake)
+* [@mqudsi](https://github.com/mqudsi)
+* [@naiba](https://github.com/naiba)
+* [@neezer](https://github.com/neezer)
+* [@nickolas360](https://github.com/nickolas360)
+* [@phtan](https://github.com/phtan)
+* [@pjeby](https://github.com/pjeby)
+* [@qianlei90](https://github.com/qianlei90)
+* [@rvillablanca](https://github.com/rvillablanca)
+* [@sapk](https://github.com/sapk)
+* [@sdwolfz](https://github.com/sdwolfz)
+* [@serverwentdown](https://github.com/serverwentdown)
+* [@Siosm](https://github.com/Siosm)
+* [@stevegt](https://github.com/stevegt)
+* [@tbraeutigam](https://github.com/tbraeutigam)
+* [@techknowlogick](https://github.com/techknowlogick)
+* [@teepark](https://github.com/teepark)
+* [@tf198](https://github.com/tf198)
+* [@thehowl](https://github.com/thehowl)
+* [@Treora](https://github.com/Treora)
+* [@tuxillo](https://github.com/tuxillo)
+* [@vityafx](https://github.com/vityafx)
+* [@xwjdsh](https://github.com/xwjdsh)
+
+[PRs](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+milestone%3A1.5.0)
+and [issues](https://github.com/go-gitea/gitea/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A1.5.0)
+merged in 1.5.0.
+
+# Get in touch
+
+You can come on our [Discord server,](https://discord.gg/NsatcWJ) or if you're
+more old-fashioned you can also use our [forums](https://discourse.gitea.io/).
+
+TODO: Link to full changelog (autogenerated). CHANGELOG.md?
