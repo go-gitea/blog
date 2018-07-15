@@ -1,8 +1,7 @@
 baseurl: https://blog.gitea.io/
 languageCode: en-us
-title: Gitea Blog
+title: Blog
 theme: gitea
-disqusShortname: gitea
 
 defaultContentLanguage: en-us
 defaultContentLanguageInSubdir: true
@@ -29,6 +28,10 @@ menu:
       url: https://docs.gitea.io/en-us/
       weight: 20
       pre: question
+    - name: API
+      url: https://try.gitea.io/api/swagger
+      weight: 45
+      pre: plug
     - name: Blog
       url: /
       weight: 30
