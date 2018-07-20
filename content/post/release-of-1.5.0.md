@@ -107,30 +107,30 @@ _Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV)_
 
 ## Other changes
 
-* If your team is used to placing issue references in square brackes
-  (ie. `[JIRA-123]`), we now correctly parse that!
-  ([#3408](https://github.com/go-gitea/gitea/pull/3408))
 * You can now specify a second whitelist for protected branches, allowing you
   to select users who are able to merge PRs.
   ([#3689](https://github.com/go-gitea/gitea/pull/3689))
-* From the admin panel, you can now run `git fsck` (health check) on all your
-  repositories, as well as disable it entirely if desired.
-  ([#3606](https://github.com/go-gitea/gitea/pull/3606),
-  [#3607](https://github.com/go-gitea/gitea/pull/3607))
 * We did some optimisations on the repository search feature - users report up
   to a 3x reduction in disk usage by the indexer.
   ([#3452](https://github.com/go-gitea/gitea/pull/3452))
+* Power to webhooks! We added support for delete, fork, issues, issue\_comment,
+  and release webhooks, which have long been a requested feature ever since
+  webhooks first came to Gogs.
+  ([#3929](https://github.com/go-gitea/gitea/pull/3929))
 * Some changes were made to how Gitea handles messages with custom markup, such
   as commit messages and issue comments. Mentions, emails, links and so on
   should now be correctly handled.
   ([#3354](https://github.com/go-gitea/gitea/pull/3354))
+* If your team is used to placing issue references in square brackes
+  (ie. `[JIRA-123]`), we now correctly parse that!
+  ([#3408](https://github.com/go-gitea/gitea/pull/3408))
+* From the admin panel, you can now run `git fsck` (health check) on all your
+  repositories, as well as disable it entirely if desired.
+  ([#3606](https://github.com/go-gitea/gitea/pull/3606),
+  [#3607](https://github.com/go-gitea/gitea/pull/3607))
 * We added some new features to Gitea's API, such as issue search and
   attachments. ([#3478](https://github.com/go-gitea/gitea/pull/3478),
   [#3612](https://github.com/go-gitea/gitea/pull/3612))
-* Power to webhooks! We added support for delete, fork, issues, issue\_comment,
-  and release webhooks, which have long been a requested feature ever since
-  webhooks first came on Gogs.
-  ([#3929](https://github.com/go-gitea/gitea/pull/3929))
 * Symlinks in a repository are now marked by a distinctive icon.
   ([#3826](https://github.com/go-gitea/gitea/pull/3826))
 * We'll remember your preferred language so that you don't have to change it for
