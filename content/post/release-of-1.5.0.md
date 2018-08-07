@@ -5,7 +5,7 @@ title: "Gitea 1.5.0 is released"
 tags: ["release"]
 ---
 
-The time has come for another minor release! We are happy to present Gitea
+The time has come for another major release! We are happy to present Gitea
 1.5.0 to the world. In this release, we merged
 [258 pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.5.0+is%3Amerged)
 -- just a bit more than last time (236).
@@ -143,6 +143,8 @@ _Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV)_
   ([Various](https://github.com/go-gitea/gitea/pulls?q=is%3Apr+author%3Abugreport0+is%3Aclosed+milestone%3A1.5.0))
 * You can now sort repos in Explore and the admin panel by stars or forks.
   ([#3969](https://github.com/go-gitea/gitea/pull/3969))
+* If you use drone, there is now a handy plugin to create releases and
+  attachments: <http://plugins.drone.io/drone-plugins/drone-gitea-release/>
 * Starting from 1.5.0, we'll sign all our releases with our
   [GPG Key,](http://pool.sks-keyservers.net/pks/lookup?op=get&hash=on&fingerprint=on&search=0x2D9AE806EC1592E2)
   so you can be sure it's us.
@@ -156,7 +158,7 @@ release:
 
 * [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
 
-**Deprecation notice:** in the upcoming minor release (1.6.0) we will drop
+**Deprecation notice:** in the upcoming major release (1.6.0) we will drop
 support for Go 1.8 and also embedded TiDB.
 
 # Help us out!
