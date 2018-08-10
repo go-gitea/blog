@@ -1,5 +1,5 @@
 ---
-date: "2018-07-07T10:00:00+00:00"
+date: "2018-08-10T10:00:00+00:00"
 author: "thehowl"
 title: "Gitea 1.5.0 is released"
 tags: ["release"]
