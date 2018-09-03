@@ -1,5 +1,5 @@
 ---
-date: "2018-09-03T10:00:00+00:00"
+date: "2018-09-03T01:00:00+00:00"
 author: "techknowlogick"
 title: "Gitea 1.5.1 is released"
 tags: ["release"]
