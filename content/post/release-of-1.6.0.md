@@ -45,7 +45,7 @@ _Thanks to [**@kolaente**](https://github.com/kolaente)_
 
 Gitea deprecated third-party theme to add the ability to have built in themes in Gitea and provide dark theme arc-green.
 
-_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)
+_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)_
 
 ## CSV Render ([#4105](https://github.com/go-gitea/gitea/pull/4105))
 
