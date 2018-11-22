@@ -241,7 +241,7 @@ release:
 
 * [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
 
-**Deprecation notice:** in the upcoming major release (1.6.0) we will drop
+**Deprecation notice:** in this release we are dropping
 support for Go 1.8 and also embedded TiDB.
 
 # Help us out!
