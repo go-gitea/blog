@@ -29,7 +29,7 @@ With that out of the way, here's what's new in 1.6.0:
 
 You can now review the code on pull requests and place comments on the code lines. You can also approve or reject the pull requests.
 
-_Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV) and [**@lafriks**](https://github.com/lafriks) _
+_Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV) and [**@lafriks**](https://github.com/lafriks)_
 
 ## Issue Depentdencies ([#2531](https://github.com/go-gitea/gitea/pull/2531))
 
@@ -95,7 +95,7 @@ _Thanks to [**@lafriks**](https://github.com/lafriks)_
 
 ## Add Recaptcha functionality to Gitea ([#4044](https://github.com/go-gitea/gitea/pull/4044))
 
-![Recaptcha demo](/demos/4044/1.png)_
+![Recaptcha demo](/demos/4044/1.png)
 
 You can enable recaptcha when registering in Gitea.
 
@@ -107,7 +107,7 @@ _Thanks to [**@Fluf**](fluf@warpmail.net)_
   * Respect email privacy option in user search via API (#4512)
   * Simply remove embedded tidb and deps (#3993)
   * Swagger.v1.json template (#3572)
- 
+
 * BUGFIXES
   * dont' send assign webhooks when creating issue (#5365)
   * Fix create team, update team missing units (#5188)
