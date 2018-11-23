@@ -27,17 +27,17 @@ With that out of the way, here's what's new in 1.6.0:
 
 ![Code Review demo](/demos/3748/1.gif)
 
-You can now review the codes on pull requests and place comments on the code lines. You can approval/reject the pull requests. 
+You can now review the code on pull requests and place comments on the code lines. You can also approve or reject the pull requests.
 
-_Thanks to [**@lafriks**](https://github.com/lafriks) _and [**@JonasFranzDEV**](https://github.com/JonasFranzDEV)
+_Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV) and [**@lafriks**](https://github.com/lafriks)_
 
 ## Issue Depentdencies ([#2531](https://github.com/go-gitea/gitea/pull/2531))
 
 ![Issue Depentdencies](/demos/2531/1.png)
 
-You can add dependencies for issues, if an issue is blocked by another, it could not be closed until all block issues closed.
+You can add dependencies for issues, if an issue is blocked by another it can not be closed until all block issues are closed.
 
-_Thanks to [**@kolaente**](https://github.com/kolaente)
+_Thanks to [**@kolaente**](https://github.com/kolaente)_
 
 ## Theme Support and Dark Theme ([#4198](https://github.com/go-gitea/gitea/pull/4198))
 
@@ -45,61 +45,61 @@ _Thanks to [**@kolaente**](https://github.com/kolaente)
 
 Gitea deprecated third-party theme to add the ability to have built in themes in Gitea and provide dark theme arc-green.
 
-_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)
+_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)_
 
 ## CSV Render ([#4105](https://github.com/go-gitea/gitea/pull/4105))
 
 ![CSV Render](/demos/4105/1.png)
 
-Add csv file render support defaultly.
+CSV files are now also rendered as table.
 
-_Thanks to [**@lunny**](https://github.com/lunny)
+_Thanks to [**@lunny**](https://github.com/lunny)_
 
 ## Add sudo functionality to the API ([#4809](https://github.com/go-gitea/gitea/pull/4809))
 
-Now admin users could sudo some user to do something via API. It similar to [https://docs.gitlab.com/ee/api/#sudo](https://docs.gitlab.com/ee/api/#sudo) 
+Now administrator users could sudo as other user to call API as that user. It similar to [https://docs.gitlab.com/ee/api/#sudo](https://docs.gitlab.com/ee/api/#sudo) 
 
-_Thanks to [**@zeripath**](https://github.com/zeripath)
+_Thanks to [**@zeripath**](https://github.com/zeripath)_
 
 ## Gitea command line adds oauth commands ([#4591](https://github.com/go-gitea/gitea/pull/4591))
 
-You can manage oauth providers on command line. See [https://docs.gitea.io/en-us/command-line](https://docs.gitea.io/en-us/command-line)
+You can manage OAuth2 providers via command line. See [https://docs.gitea.io/en-us/command-line](https://docs.gitea.io/en-us/command-line)
 
-_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)
+_Thanks to [**@techknowlogick**](https://github.com/techknowlogick)_
 
-## Disable merging a WIP Pull request ([#4529](https://github.com/go-gitea/gitea/pull/4529))
+## Do not allow merging of a WIP Pull requests ([#4529](https://github.com/go-gitea/gitea/pull/4529))
 
 ![WIP Pull Request demo](/demos/4529/1.png)
 
-When the TITLE of the pull requests starts with [wip] or wip: or prefix configured on app.ini, the pull request cannot be merged by anyone.
+When the title of the pull requests starts with [wip] or wip: or prefix configured on app.ini, the pull request cannot be merged by anyone until prefix is removed.
 
-_Thanks to [**@JulienTant**](https://github.com/JulienTant)
+_Thanks to [**@JulienTant**](https://github.com/JulienTant)_
 
 ## Force user to change password ([#4489](https://github.com/go-gitea/gitea/pull/4489))
 
-When an account was created by admins, it could be restricted access to operations by redirecting to a new route `/user/settings/change_password`
+When an account was created by administrator, it can now be forced to change password after authorization.
 
-_Thanks to [**@adelowo**](https://github.com/adelowo)
+_Thanks to [**@adelowo**](https://github.com/adelowo)_
 
 ## Add letsencrypt to Gitea ([#4189](https://github.com/go-gitea/gitea/pull/4189))
 
-This pull request makes Let's Encrypt integration easier.
+It is now possibe to enable automatic Let's Encrypt certificates for easier HTTPS configuration.
 
-_Thanks to [**@Fluf**](fluf@warpmail.net)
+_Thanks to [**@Fluf**](fluf@warpmail.net)_
 
 ## Add push webhook support for mirrored repositories ([#4127](https://github.com/go-gitea/gitea/pull/4127))
 
 Now push webhook of mirrored repositories will be fired.
 
-_Thanks to [**@lafriks**](https://github.com/lafriks)
+_Thanks to [**@lafriks**](https://github.com/lafriks)_
 
 ## Add Recaptcha functionality to Gitea ([#4044](https://github.com/go-gitea/gitea/pull/4044))
 
 ![Recaptcha demo](/demos/4044/1.png)
 
-You can enable ecaptcha when registering Gitea.
+You can enable recaptcha when registering in Gitea.
 
-_Thanks to [**@Fluf**](fluf@warpmail.net)
+_Thanks to [**@Fluf**](fluf@warpmail.net)_
 
 ## Other changes
 
@@ -107,7 +107,7 @@ _Thanks to [**@Fluf**](fluf@warpmail.net)
   * Respect email privacy option in user search via API (#4512)
   * Simply remove embedded tidb and deps (#3993)
   * Swagger.v1.json template (#3572)
- 
+
 * BUGFIXES
   * dont' send assign webhooks when creating issue (#5365)
   * Fix create team, update team missing units (#5188)
@@ -241,7 +241,7 @@ release:
 
 * [@cezar97](https://github.com/cezar97) ([#3878](https://github.com/go-gitea/gitea/pull/3878))
 
-**Deprecation notice:** in the upcoming major release (1.6.0) we will drop
+**Deprecation notice:** in this release we are dropping
 support for Go 1.8 and also embedded TiDB.
 
 # Help us out!
