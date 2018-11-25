@@ -31,9 +31,9 @@ You can now review the code on pull requests and place comments on the code line
 
 _Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV) and [**@lafriks**](https://github.com/lafriks)_
 
-## Issue Depentdencies ([#2531](https://github.com/go-gitea/gitea/pull/2531))
+## Issue Dependencies ([#2531](https://github.com/go-gitea/gitea/pull/2531))
 
-![Issue Depentdencies](/demos/2531/1.png)
+![Issue Dependencies](/demos/2531/1.png)
 
 You can add dependencies for issues, if an issue is blocked by another it can not be closed until all block issues are closed.
 
