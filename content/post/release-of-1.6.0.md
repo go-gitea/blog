@@ -35,7 +35,7 @@ _Thanks to [**@JonasFranzDEV**](https://github.com/JonasFranzDEV) and [**@lafrik
 
 ![Issue Dependencies](/demos/2531/1.png)
 
-You can add dependencies for issues, if an issue is blocked by another it can not be closed until all block issues are closed.
+You can add dependencies for issues, if an issue is blocked by another it can not be closed until all blocked issues are closed.
 
 _Thanks to [**@kolaente**](https://github.com/kolaente)_
 
