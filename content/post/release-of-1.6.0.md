@@ -5,7 +5,7 @@ title: "Gitea 1.6.0 is released"
 tags: ["release"]
 ---
 
-The time has come for another major release! We are proudly to present Gitea
+The time has come for another major release! We are proud to present Gitea
 1.6.0 to the world. In this release, we merged
 [178 pull requests](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+milestone%3A1.6.0+is%3Amerged)
 -- it's less than last time (258).
