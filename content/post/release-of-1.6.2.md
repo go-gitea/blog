@@ -14,7 +14,7 @@ you just need to select the correct platform. For further details of the install
 
 We would like to say special thanks to those who reported security issues fixed in this release.
 
-* [@snyff](https://github.com/snyff) ([#5571](https://github.com/go-gitea/gitea/pull/5571))
+* [Louis from @PentesterLab](https://github.com/PentesterLab) ([#5571](https://github.com/go-gitea/gitea/pull/5571))
 * [@simia-zaru ](https://github.com/simia-zaru ) ([#5570](https://github.com/go-gitea/gitea/pull/5570))
 
 Another thank you goes to all of our supporters on [Open Collective](https://opencollective.com/gitea)
