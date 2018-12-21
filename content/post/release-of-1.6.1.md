@@ -19,11 +19,11 @@ with financial sustainment.
 
 ## Changelog
 * BUGFIXES
-  * Fix dependent issue searching when gitea is run in subpath (#5392) (#5400)
-  * API: '/orgs/:org/repos': return private repos with read access (#5393)
-  * Fix repository deletion when there is large number of issues in it (#5426) (#5434)
-  * Word-break the WebHook url to prevent a ui-break (#5445)
-  * Admin should be able to delete repos via the API even if they are not a member of the organization (#5443) (#5447)
-  * Ensure that the `closed_at` is set for closed (#5450)
-  * Fix topic name length on database (#5493) (#5495)
+  * Fix dependent issue searching when gitea is run in subpath ([#5392](https://github.com/go-gitea/gitea/pull/5392)) ([#5400](https://github.com/go-gitea/gitea/pull/5400))
+  * API: '/orgs/:org/repos': return private repos with read access ([#5393](https://github.com/go-gitea/gitea/pull/5393))
+  * Fix repository deletion when there is large number of issues in it ([#5426](https://github.com/go-gitea/gitea/pull/5426)) ([#5434](https://github.com/go-gitea/gitea/pull/5434))
+  * Word-break the WebHook url to prevent a ui-break ([#5445](https://github.com/go-gitea/gitea/pull/5445))
+  * Admin should be able to delete repos via the API even if they are not a member of the organization ([#5443](https://github.com/go-gitea/gitea/pull/5443)) ([#5447](https://github.com/go-gitea/gitea/pull/5447))
+  * Ensure that the `closed_at` is set for closed ([#5450](https://github.com/go-gitea/gitea/pull/5450))
+  * Fix topic name length on database ([#5493](https://github.com/go-gitea/gitea/pull/5493)) ([#5495](https://github.com/go-gitea/gitea/pull/5495))
 
