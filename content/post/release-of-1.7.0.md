@@ -1,8 +1,9 @@
 ---
-date: "2019-1-24T11:38:00+08:00"
+date: "2019-01-24T11:38:00+08:00"
 author: "lunny"
 title: "Gitea 1.7.0 is released"
 tags: ["release"]
+draft: false
 ---
 
 The time has come for another major release! We are proud to present Gitea
@@ -19,7 +20,7 @@ We'd like to thank all of our backers on
 [Open Collective](https://opencollective.com/gitea), who are helping us deliver
 a better piece of software.
 
-With that out of the way, here's what's new on UI in 1.7.0:
+With that out of the way, here's what's new in Gitea version 1.7.0:
 
 <!--more-->
 
