@@ -277,9 +277,6 @@ release:
 * [@zeripath](https://github.com/zeripath) ([#5705](https://github.com/go-gitea/gitea/pull/5705) [#5669](https://github.com/go-gitea/gitea/pull/5669) [#5631](https://github.com/go-gitea/gitea/pull/5631))
 * [@misterpoesy](https://github.com/misterpoesy) ([#5627](https://github.com/go-gitea/gitea/issues/5627))
 
-**Deprecation notice:** in this release we are dropping
-support for Go 1.8 and also embedded TiDB.
-
 # Help us out!
 
 Gitea is focused on community input and contributions. To keep a project like
