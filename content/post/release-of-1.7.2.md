@@ -1,5 +1,5 @@
 ---
-date: "2019-02-14T09:12:00+08:00"
+date: "2019-02-19T13:28:05-06:00" 
 author: "jolheiser"
 title: "Release of 1.7.2"
 tags: ["release"]
@@ -8,7 +8,7 @@ draft: false
 
 We proudly present the minor release of Gitea version 1.7.2.
 We have merged 24 pull requests to release this version.
-You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.7.1/),
+You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.7.2/),
 you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
 Another thank you goes to all of our supporters on [Open Collective](https://opencollective.com/gitea)
