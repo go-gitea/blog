@@ -7,7 +7,7 @@ draft: false
 ---
 
 We proudly present the minor release of Gitea version 1.7.2.
-We have merged 24 pull requests to release this version.
+We have merged 13 pull requests to release this version.
 You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.7.2/),
 you just need to select the correct platform. For further details of the installation follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
