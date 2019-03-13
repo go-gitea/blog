@@ -15,7 +15,7 @@ You can download one of our pre-built binaries from our
 correct platform! For further details on how to install, follow our
 [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
-We'd like to thank [Anti Räis](https://bitflipper.eu) for reporting the security issue that have been patched
+We'd like to thank [Anti Räis](https://bitflipper.eu) for reporting the security issue that has been patched
 in this release. Another thank you goes to all of our supporters on
 [Open Collective](https://opencollective.com/gitea) who are also helping us
 with financial sustainment.
