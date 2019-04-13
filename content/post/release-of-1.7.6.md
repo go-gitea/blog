@@ -22,5 +22,6 @@ We'd like to thank all of our supporters on [Open Collective](https://opencollec
 
 * SECURITY
   * Prevent remote code execution vulnerability with mirror repo URL settings ([#6593](https://github.com/go-gitea/gitea/pull/6593)) ([#6595](https://github.com/go-gitea/gitea/pull/6595))
+
 * BUGFIXES
   * Allow resend of confirmation email when logged in ([#6482](https://github.com/go-gitea/gitea/pull/6482)) ([#6487](https://github.com/go-gitea/gitea/pull/6487))
