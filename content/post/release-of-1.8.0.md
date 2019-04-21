@@ -77,7 +77,7 @@ _Thanks to [**@techknowlogick**](https://github.com/techknowlogick) &amp; [**@Db
   * Style tweaks to issue selection (#6196)
   * Increase Username and Orgname MaxSize 35 -> 40 (#6178)
   * Coverage profile with multiple packages (#6167)
-  * Split setting.go to multiple files (#6154)
+  * Split setting.go to multiple files (#6154) (#6014)
   * Allow labels to contain emoji (#6063)
   * Disable git fsck for mirrored repos by default (#6018)
   * Add default time out for git operations (#6015)
