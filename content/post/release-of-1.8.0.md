@@ -81,7 +81,6 @@ _Thanks to [**@techknowlogick**](https://github.com/techknowlogick) &amp; [**@Db
   * Allow labels to contain emoji (#6063)
   * Disable git fsck for mirrored repos by default (#6018)
   * Add default time out for git operations (#6015)
-  * Split setting.go as multiple files (#6014)
   * Make dashboard navbar and footer full-width (#6013)
   * Add lang specific font stacks for CJK (#6007)
   * Fix header menu misalignment (#6002)
