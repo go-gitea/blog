@@ -15,7 +15,8 @@ In this release, we merged
 You can download one of our pre-built binaries from our
 [downloads page](https://dl.gitea.io/gitea/1.8.0/) - make sure to select the
 correct platform! For further details on how to install, follow our
-[installation guide](https://docs.gitea.io/en-us/install-from-binary/).
+[installation guide](https://docs.gitea.io/en-us/install-from-binary/). Unfortunately
+there is a known issue with our prebuilt images on armv7, see [#6700](https://github.com/go-gitea/gitea/issues/6700).
 
 We'd like to thank all of our backers on
 [Open Collective](https://opencollective.com/gitea), who are helping us deliver
