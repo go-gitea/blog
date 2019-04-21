@@ -409,7 +409,7 @@ This release would not have been possible without the pull requests from the fol
 
 [PRs](https://github.com/go-gitea/gitea/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Amerged+milestone%3A1.8.0)
 and [issues](https://github.com/go-gitea/gitea/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A1.8.0)
-merged in 1.7.0.
+merged in 1.8.0.
 
 # Get in touch
 
