@@ -288,7 +288,7 @@ release:
 
 * [@techknowlogick](https://github.com/techknowlogick) ([#6674](https://github.com/go-gitea/gitea/pulls/6674))
   * With special thanks to [@jonasfranz](https://github.com/jonasfranz) for making Gitea an OAuth2 provider
-   and the many people who reported the 2FA token security loophole.
+and to [0x5c](https://github.com/0x5c), Nils Sandmann, [Max Mehl](https://fsfe.org/about/mehl), and Andreas Shimokawa who all independently reported the API 2FA bypass security loophole.
 * [@zeripath](https://github.com/zeripath) ([#6594](https://github.com/go-gitea/gitea/pull/6594) [#6677](https://github.com/go-gitea/gitea/pull/6677)
   * With special thanks to [@mrsdizzie](https://github.com/mrsdizzie) for quietly confirming the underlying bug in [#6677](https://github.com/go-gitea/gitea/pull/6677) and [@perflyst](https://github.com/perflyst) for reporting [#6320](https://github.com/go-gitea/gitea/issues/6320) which should properly be fixed by ([#6594](https://github.com/go-gitea/gitea/pull/6594)
 
