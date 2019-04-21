@@ -27,7 +27,9 @@ With that out of the way, here's what's new in Gitea version 1.8.0:
 
 ## OAuth2 Provider [#5378](https://github.com/go-gitea/gitea/pull/5378)
 
-Gitea is now an OAuth2 Provider. This fixes and closes issue [#27](https://github.com/go-gitea/gitea/issues/27)!
+Gitea is now an [OAuth2 Provider](https://docs.gitea.io/en-us/oauth2-provider/). This fixes and closes issue [#27](https://github.com/go-gitea/gitea/issues/27)!
+
+![Authorize TestApp Access](https://docs.gitea.io/authorize.png)
 
 _Thanks to [**@jonasfranz**](https://github.com/jonasfranz)_
 
@@ -35,6 +37,10 @@ _Thanks to [**@jonasfranz**](https://github.com/jonasfranz)_
 
 Repositories in Gitea can now be archived. This prevents the creation of new issues,
 pull-requests or pushing to the git repository.
+
+![Archived Repository](/demos/5009/1.png)
+
+![Archived Repository List](/demos/5009/2.png)
 
 _Thanks to [**@kolaente**](https://github.com/kolaente)_
 
@@ -44,7 +50,17 @@ Organizations can now be set to be Public, Internal or Private. Repositories cre
 internal organizations will only be visible to logged-in users. Private organizations will
 only be visible to those who are members.
 
+![Archived Repository List](/demos/1763/1.png)
+
 _Thanks to [**@techknowlogick**](https://github.com/techknowlogick) &amp; [**@DblK**](https://github.com/dblk)_
+
+## Implement "conversation lock" for issue comments [#5073](https://github.com/go-gitea/gitea/pull/5073)
+
+Conversations can now be locked in similar way to Github.
+
+![Locked Comments](/demos/5073/1.png)
+
+_Thanks to [**@adelowo**](https://github.com/adelowo)_
 
 ## Changelog
 
@@ -67,7 +83,7 @@ _Thanks to [**@techknowlogick**](https://github.com/techknowlogick) &amp; [**@Db
   * Pull request conflict files detection (#5951)
   * Integrate OAuth2 Provider (#5378)
   * Implement "conversation lock" for issue comments (#5073)
-  * Feature: Archive repos (#5009)
+  * Archive repos (#5009)
   * Discord Oauth2 support (#4476)
   * Allow to set organization visibility (public, internal, private) (#1763)
   * Added URL mapping for Release attachments like on github.com (#1707)
@@ -90,11 +106,11 @@ _Thanks to [**@techknowlogick**](https://github.com/techknowlogick) &amp; [**@Db
   * Support n as a line highlight prefix (#5987)
   * Search for org repos (#3031) (#5986)
   * Minor UI tweaks (#5980)
-  * Use native golang SSH library but ssh-keygen when enable built-in SSH server to remove dependent on that command lines (#5976)
+  * Use native golang SSH library but ssh-keygen when using the built-in SSH server to remove dependency on the command line (#5976)
   * Dashboard tweaks (#5974)
   * Fixes for repo topic editor (#5971)
   * Display the branch name in the commit view (#5950)
-  * handle milestone events for issues and PR (#5947)
+  * Handle milestone events for issues and PR (#5947)
   * Add label names as filter in issue search api (#5946)
   * Repo header tweaks (#5945)
   * Better support for long repo names (#5932)
