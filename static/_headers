@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://discourse.gitea.io https://discourse-cdn-sjc2.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://discourse-cdn-sjc2.com; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' https://discourse.gitea.io https://discourse-cdn-sjc2.com; frame-src 'self' https://discourse.gitea.io
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://discourse.gitea.io https://discourse-cdn-sjc2.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://discourse-cdn-sjc2.com; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' https://docs.gitea.io https://discourse.gitea.io https://opencollective.com https://discourse-cdn-sjc2.com; frame-src 'self' https://discourse.gitea.io;
   X-Frame-Options: DENY
   X-Xss-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
