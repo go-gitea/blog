@@ -8,7 +8,7 @@ draft: false
 
 We are proud to present the release of Gitea version 1.8.1. 
 
-We have merged 23 pull requests to release this version. 
+We have merged [24](https://github.com/go-gitea/gitea/pulls?q=is%3Apr+milestone%3A1.8.1+is%3Aclosed) pull requests to release this version. 
 
 You can download one of our pre-built binaries from our [downloads page](https://dl.gitea.io/gitea/1.8.1/) - make sure to select the correct platform! For further details on how to install, follow our [installation guide](https://docs.gitea.io/en-us/install-from-binary/).
 
