@@ -19,7 +19,7 @@ We'd like to thank all of our supporters on [Open Collective](https://opencollec
 ## Changelog
 
 * BUGFIXES
-  * Fix possbile mysql invalid connnection error ([#7051](https://github.com/go-gitea/gitea/pull/7051)) ([#7071](https://github.com/go-gitea/gitea/pull/7071))
+  * Fix possible mysql invalid connnection error ([#7051](https://github.com/go-gitea/gitea/pull/7051)) ([#7071](https://github.com/go-gitea/gitea/pull/7071))
   * Handle invalid administrator username on install page ([#7060](https://github.com/go-gitea/gitea/pull/7060)) ([#7063](https://github.com/go-gitea/gitea/pull/7063))
   * Disable arm7 builds ([#7037](https://github.com/go-gitea/gitea/pull/7037)) ([#7042](https://github.com/go-gitea/gitea/pull/7042))
   * Fix default for allowing new organization creation for new users ([#7017](https://github.com/go-gitea/gitea/pull/7017)) ([#7034](https://github.com/go-gitea/gitea/pull/7034))
