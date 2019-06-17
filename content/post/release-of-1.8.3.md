@@ -19,7 +19,7 @@ We'd like to thank all of our supporters on [Open Collective](https://opencollec
 ## Changelog
 
 * BUGFIXES
-  * Always set userID on LFS authentication ([#7224](https://github.com/go-gitea/gitea/pull/7224))
+  * Always set userID on LFS authentication ([#7224](https://github.com/go-gitea/gitea/pull/7224)) ([Part of #6993](https://github.com/go-gitea/gitea/pull/6993))
   * Fix LFS Locks over SSH ([#6999](https://github.com/go-gitea/gitea/pull/6999)) ([#7223](https://github.com/go-gitea/gitea/pull/7223))
   * Fix duplicated file on pull request conflicted files ([#7211](https://github.com/go-gitea/gitea/pull/7211)) ([#7214](https://github.com/go-gitea/gitea/pull/7214))
   * Detect noreply email address as user ([#7133](https://github.com/go-gitea/gitea/pull/7133)) ([#7195](https://github.com/go-gitea/gitea/pull/7195))
